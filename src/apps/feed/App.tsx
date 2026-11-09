@@ -3053,8 +3053,7 @@ function App() {
           activeSlide === 26 ||
           activeSlide === 27 ||
           activeSlide === 28 ||
-          activeSlide === 29 ||
-          activeSlide === 30
+          activeSlide === 29
         ) {
           finalCanvas = renderedCanvas;
         } else {
