@@ -16,4 +16,5 @@
 - [x] GGS Feed slide 29: hair treatment "mempercantik diri" with the owner's retouched salon photo + PNG download
 - [x] GGS Feed slide 29 v2: AI-made background behind the original (unchanged-face) people, no frames/shapes, re-capture PNG
 - [x] GGS Feed slide 30: Hari Pahlawan "hari ini" reminder with the owner's team flashlight photo + PNG download
+- [x] GGS Feed slide 30: remove the yellow "Hari Pahlawan" line; label "Berlaku sampai tanggal 10 November"
 - [ ] "Body massage + bekam" duration — waiting on owner

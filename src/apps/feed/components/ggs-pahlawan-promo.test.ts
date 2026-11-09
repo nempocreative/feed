@@ -9,4 +9,8 @@ describe('GGS promo Hari Pahlawan', () => {
   it('khusus guru, dokter, perawat, polisi, dan bidan', () => {
     expect([...GGS_PAHLAWAN_PROMO.professions]).toEqual(['Guru', 'Dokter', 'Perawat', 'Polisi', 'Bidan']);
   });
+
+  it('berlaku sampai tanggal 10 November', () => {
+    expect(GGS_PAHLAWAN_PROMO.validUntil).toBe('10 November');
+  });
 });
