@@ -6,7 +6,7 @@ import './GgsPahlawanReminderSlide.css';
 
 /** GGS Feed slide 30: "today is Hari Pahlawan" reminder for the slide 27 promo, over the owner's team photo (unchanged pixels). */
 export function GgsPahlawanReminderSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
-  const { discountPercent, professions } = GGS_PAHLAWAN_PROMO;
+  const { discountPercent, professions, validUntil } = GGS_PAHLAWAN_PROMO;
   const forList = `${professions.slice(0, -1).join(' · ')} · ${professions[professions.length - 1]}`;
   return (
     <div
@@ -38,7 +38,7 @@ export function GgsPahlawanReminderSlide({ exportRef }: { exportRef?: RefObject<
           </p>
         </div>
         <div className="ggpi-terms">
-          <p className="ggpi-today">Berlaku hari ini saja</p>
+          <p className="ggpi-today">Berlaku sampai tanggal {validUntil}</p>
           <p className="ggpi-for">Khusus {forList}</p>
           <p className="ggpi-note">Tunjukkan kartu identitas profesi saat datang.</p>
         </div>
