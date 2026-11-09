@@ -122,6 +122,18 @@
   --ggkt-primary: #b0185a;
   --ggkt-line: color-mix(in srgb, #3d0b2a 16%, transparent);
 }
+/* GGS Feed slide 30 (3:4): Hari Pahlawan "hari ini" reminder, night + flashlight palette. */
+.ggpi-root {
+  --ggpi-night: #0b0709;
+  --ggpi-ink: #fff6f0;
+  --ggpi-ink-soft: #f1d9d4;
+  --ggpi-primary: #e8467c;
+  --ggpi-gold: #f6c96b;
+  --ggpi-photo-top: 0cqw;
+  --ggpi-shade: linear-gradient(180deg, color-mix(in srgb, #0b0709 72%, transparent) 0%, color-mix(in srgb, #0b0709 30%, transparent) 30%, color-mix(in srgb, #0b0709 0%, transparent) 46%, color-mix(in srgb, #0b0709 0%, transparent) 58%, color-mix(in srgb, #0b0709 78%, transparent) 76%, #0b0709 92%);
+  --ggpi-text-shadow: 0 .3cqw 1.8cqw color-mix(in srgb, #000000 80%, transparent);
+  --ggpi-badge-glow: 0 0 6cqw color-mix(in srgb, #f6c96b 38%, transparent), 0 0 0 .5cqw color-mix(in srgb, #f6c96b 85%, transparent);
+}
 /* GGS Feed slide 29 (3:4): hair treatment self-care palette. */
 .gghb-root {
   --gghb-ink: #3d0b2a;
