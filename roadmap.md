@@ -19,3 +19,4 @@
 - [x] GGS Feed slide 30: remove the yellow "Hari Pahlawan" line; label "Berlaku sampai tanggal 10 November"
 - [ ] "Body massage + bekam" duration — waiting on owner
 - [x] Tion Feed slide 13: Roti'O "Momen Manis" promo video in slide 12 look, sharp MP4 download, working download button
+- [x] Tion Feed slide 14: Hoka Seru 3 + Beef Teriyaki promo video (Rp44.000 dari Rp56.500, -23%), sharp MP4 download

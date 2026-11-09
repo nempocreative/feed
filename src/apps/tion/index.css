@@ -1238,6 +1238,29 @@ a {
   }
 }
 
+/* Slide 14 — Hoka Seru: meal fills the middle, so the price card sits top-right above the salad */
+.tion13--hoka .tion13__video {
+  object-position: 50% 42%;
+}
+
+.tion13--hoka .tion13__price {
+  top: 29%;
+  left: auto;
+  right: 7%;
+}
+
+.tion13--hoka .tion13__shade {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 16, 0.66) 0%,
+    rgba(14, 20, 16, 0.4) 20%,
+    rgba(14, 20, 16, 0) 34%,
+    rgba(10, 16, 13, 0) 62%,
+    rgba(10, 16, 13, 0.62) 77%,
+    rgba(10, 16, 13, 0.9) 100%
+  );
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tion13 *,
   .tion13 *::before,
