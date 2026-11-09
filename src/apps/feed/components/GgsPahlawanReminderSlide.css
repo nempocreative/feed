@@ -6,8 +6,8 @@
 .ggpi-title{margin:1.6cqw 0 0;display:flex;flex-direction:column;font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:8.4cqw;line-height:1;color:var(--ggpi-ink);text-shadow:var(--ggpi-text-shadow)}
 .ggpi-title span,.ggpi-title em{white-space:nowrap}
 .ggpi-title em{font-style:italic;font-weight:500;color:var(--ggpi-primary)}
-.ggpi-sub{margin:2cqw 0 0;max-width:60cqw;font-size:2.4cqw;line-height:1.4;font-weight:500;color:var(--ggpi-ink-soft);text-shadow:var(--ggpi-text-shadow)}
-.ggpi-deal{position:absolute;z-index:2;left:6cqw;right:6cqw;bottom:15.5cqw;display:flex;align-items:center;gap:3.6cqw}
+.ggpi-sub{margin:2cqw 0 0;max-width:60cqw;text-wrap:balance;font-size:2.4cqw;line-height:1.4;font-weight:500;color:var(--ggpi-ink-soft);text-shadow:var(--ggpi-text-shadow)}
+.ggpi-deal{position:absolute;z-index:2;left:6cqw;right:6cqw;bottom:17cqw;display:flex;align-items:center;gap:3.6cqw}
 .ggpi-badge{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;width:17cqw;height:17cqw;border-radius:50%;background:var(--ggpi-primary);color:var(--ggpi-ink);box-shadow:var(--ggpi-badge-glow)}
 .ggpi-badge-label{margin:0;font-size:1.6cqw;font-weight:700;letter-spacing:.4cqw;text-transform:uppercase}
 .ggpi-badge-value{margin:.2cqw 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:7.4cqw;line-height:.9}
