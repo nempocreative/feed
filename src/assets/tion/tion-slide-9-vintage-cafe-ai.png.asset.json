@@ -1,11 +1,11 @@
 {
-  "asset_id": "b29ff50e-551b-4921-aca0-a5fb0409d2ff",
-  "content_type": "image/png",
-  "created_at": "2026-11-09T17:20:29Z",
+  "version": 1,
+  "asset_id": "b58f84eb-5e1f-4bd8-ac26-a085f18feed5",
+  "project_id": "6ead6e30-3605-4ff4-a188-869c1cc100d8",
+  "url": "/__l5e/assets-v1/b58f84eb-5e1f-4bd8-ac26-a085f18feed5/tion-slide-9-vintage-cafe-ai.png",
+  "r2_key": "a/v1/6ead6e30-3605-4ff4-a188-869c1cc100d8/b58f84eb-5e1f-4bd8-ac26-a085f18feed5/tion-slide-9-vintage-cafe-ai.png",
   "original_filename": "tion-slide-9-vintage-cafe-ai.png",
-  "project_id": "abea1ef7-689f-4d7e-ac16-5636f6d3e7c4",
-  "r2_key": "a/v1/abea1ef7-689f-4d7e-ac16-5636f6d3e7c4/b29ff50e-551b-4921-aca0-a5fb0409d2ff/tion-slide-9-vintage-cafe-ai.png",
   "size": 1702142,
-  "url": "/__l5e/assets-v1/b29ff50e-551b-4921-aca0-a5fb0409d2ff/tion-slide-9-vintage-cafe-ai.png",
-  "version": 1
+  "content_type": "image/png",
+  "created_at": "2026-11-09T19:06:25Z"
 }

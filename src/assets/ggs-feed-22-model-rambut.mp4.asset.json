@@ -1,11 +1,11 @@
 {
-  "asset_id": "79a0cb7c-0811-4596-9fe1-f2543ca7f68c",
-  "content_type": "video/mp4",
-  "created_at": "2026-11-09T12:45:07Z",
+  "version": 1,
+  "asset_id": "76b3fd45-c981-46ac-b428-b6a50b40e76a",
+  "project_id": "6ead6e30-3605-4ff4-a188-869c1cc100d8",
+  "url": "/__l5e/assets-v1/76b3fd45-c981-46ac-b428-b6a50b40e76a/ggs-feed-22-model-rambut.mp4",
+  "r2_key": "a/v1/6ead6e30-3605-4ff4-a188-869c1cc100d8/76b3fd45-c981-46ac-b428-b6a50b40e76a/ggs-feed-22-model-rambut.mp4",
   "original_filename": "ggs-feed-22-model-rambut.mp4",
-  "project_id": "abea1ef7-689f-4d7e-ac16-5636f6d3e7c4",
-  "r2_key": "a/v1/abea1ef7-689f-4d7e-ac16-5636f6d3e7c4/79a0cb7c-0811-4596-9fe1-f2543ca7f68c/ggs-feed-22-model-rambut.mp4",
   "size": 6639006,
-  "url": "/__l5e/assets-v1/79a0cb7c-0811-4596-9fe1-f2543ca7f68c/ggs-feed-22-model-rambut.mp4",
-  "version": 1
+  "content_type": "video/mp4",
+  "created_at": "2026-11-09T19:04:34Z"
 }
