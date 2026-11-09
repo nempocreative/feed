@@ -1055,7 +1055,7 @@ a {
 
 .tion13__price {
   position: absolute;
-  top: 30%;
+  top: 34%;
   left: 5%;
   display: flex;
   flex-direction: column;
@@ -1097,8 +1097,8 @@ a {
   display: flex;
   align-items: flex-start;
   color: #28483a;
-  font-family: 'Heyam', cursive;
-  font-size: 9cqi;
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 7.6cqi;
   line-height: 1;
 }
 
@@ -1120,7 +1120,7 @@ a {
 
 .tion13__bottom {
   position: absolute;
-  bottom: 5%;
+  bottom: 4.5%;
   left: 6%;
   display: flex;
   flex-direction: column;
@@ -1144,10 +1144,11 @@ a {
 .tion13__menu strong {
   margin-top: 0.9cqi;
   color: #ffe3a5;
-  font-family: 'Heyam', cursive;
-  font-size: 6.4cqi;
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 5.2cqi;
   font-weight: 400;
   line-height: 1;
+  letter-spacing: 0.02em;
 }
 
 .tion13__cta {
