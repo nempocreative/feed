@@ -1061,8 +1061,8 @@ a {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  width: 31cqi;
-  padding: 2.2cqi 2cqi 2.4cqi;
+  width: 37cqi;
+  padding: 2.6cqi 2cqi 2.4cqi;
   border: 0.4cqi solid rgba(255, 255, 255, 0.9);
   border-radius: 3cqi;
   background: rgba(255, 248, 231, 0.97);
@@ -1076,17 +1076,17 @@ a {
 
 .tion13__price-off {
   position: absolute;
-  top: -3.4cqi;
-  right: -3.4cqi;
+  top: -5.5cqi;
+  right: -4.5cqi;
   display: grid;
   place-items: center;
-  width: 11cqi;
-  height: 11cqi;
+  width: 10cqi;
+  height: 10cqi;
   border: 0.4cqi solid #fff8e7;
   border-radius: 50%;
   background: #a75434;
   color: #fff8e7;
-  font-size: 3.2cqi;
+  font-size: 2.9cqi;
   font-weight: 900;
   box-shadow: 0 0.6cqi 1.4cqi rgba(0, 0, 0, 0.3);
   transform: rotate(10deg);
@@ -1098,7 +1098,7 @@ a {
   align-items: flex-start;
   color: #28483a;
   font-family: 'Bowlby One SC', sans-serif;
-  font-size: 7.6cqi;
+  font-size: 6.4cqi;
   line-height: 1;
 }
 
