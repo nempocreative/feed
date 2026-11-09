@@ -16,6 +16,8 @@ import brandWordmarkAsset from '@/assets/tion/nasution-boy-retro-logo-headline-y
 import avocadoAsset from '@/assets/tion/avocado-milk-user-trim.png.asset.json';
 import kopiAsset from '@/assets/tion/kopi-kenangan-mantan-user-trim.png.asset.json';
 import pistachioAsset from '@/assets/tion/pistachio-user-trim.png.asset.json';
+import slideThirteenMp4Asset from '@/assets/tion/tion-slide-13-roti-o-momen-manis.mp4.asset.json';
+import RotiOPromoSlide from './RotiOPromoSlide';
 
 const backgroundImage = productBackground.url;
 const slideTwoPortraitImage = slideTwoAsset.url;
@@ -227,7 +229,7 @@ function PlayfulTypeLine({
 function FeedPage() {
   const artworkRef = useRef<HTMLElement | null>(null);
   const [activeSlide, setActiveSlide] = useState<
-    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+    1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13
   >(8);
   const [isDownloading, setIsDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState('');
@@ -243,8 +245,9 @@ function FeedPage() {
   const isSlideTen = activeSlide === 10;
   const isSlideEleven = activeSlide === 11;
   const isSlideTwelve = activeSlide === 12;
+  const isRotiOSlide = activeSlide === 13;
   const usesSlideEightWordmark =
-    isFontGuideCover || isSlideNine || isSlideTen || isSlideEleven || isSlideTwelve;
+    isFontGuideCover || isSlideNine || isSlideTen || isSlideEleven || isSlideTwelve || isRotiOSlide;
   const activeFontExample = isFontGuideCover
     ? undefined
     : fontExamples.find((example) => example.slide === activeSlide);
@@ -258,7 +261,7 @@ function FeedPage() {
   const isHeyam = activeFontExample?.style === 'heyam';
   const isFontGuideSeries = isFontGuideCover || isFontExampleSlide;
   const isCafeSlide = isThirdSlide || isFourthSlide || isFifthSlide || isSixthSlide;
-  const isEditorialSlide = isCafeSlide || isInvitationSlide || isFontGuideSeries;
+  const isEditorialSlide = isCafeSlide || isInvitationSlide || isFontGuideSeries || isRotiOSlide;
 
   const handleDownload = async () => {
     const artwork = artworkRef.current;
@@ -266,6 +269,27 @@ function FeedPage() {
 
     setIsDownloading(true);
     setDownloadError('');
+
+    if (isRotiOSlide) {
+      try {
+        const response = await fetch(slideThirteenMp4Asset.url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const blobUrl = URL.createObjectURL(await response.blob());
+        const link = document.createElement('a');
+        link.href = blobUrl;
+        link.download = 'nasution-boy-slide-13-roti-o.mp4';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 4000);
+      } catch (error) {
+        console.error('Gagal mengunduh video slide 13:', error);
+        setDownloadError('Video belum bisa diunduh. Coba lagi.');
+      } finally {
+        setIsDownloading(false);
+      }
+      return;
+    }
 
     try {
       await document.fonts.ready;
@@ -333,7 +357,7 @@ function FeedPage() {
       <div className="flex min-h-[calc(100vh-4rem)] w-full flex-col items-center justify-center max-[640px]:min-h-screen">
         <header className="mb-3 flex w-full max-w-[720px] items-center justify-between gap-2 px-2 max-[640px]:flex-col max-[640px]:items-center sm:px-0">
           <div aria-label="Pilih slide" className="inline-flex shrink-0 rounded-full border border-[#d5c5a6] bg-[#f5eddd] p-1 shadow-[0_4px_12px_rgba(56,42,24,0.12)] max-[640px]:w-full max-[640px]:flex-wrap max-[640px]:justify-center">
-            {([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] as const).map((slide) => (
+            {([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const).map((slide) => (
               <button
                 key={slide}
                 type="button"
@@ -358,7 +382,13 @@ function FeedPage() {
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#28483a] px-3.5 py-2 text-[11px] font-black text-white shadow-[0_6px_16px_rgba(56,42,24,0.18)] hover:bg-[#365b49] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c58152] focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-70 max-[640px]:w-full max-[640px]:max-w-[220px] max-[640px]:justify-center"
           >
             <Download className="h-3.5 w-3.5" aria-hidden="true" />
-            {isDownloading ? 'Menyiapkan PNG…' : 'Download PNG'}
+            {isRotiOSlide
+              ? isDownloading
+                ? 'Menyiapkan MP4…'
+                : 'Download MP4'
+              : isDownloading
+                ? 'Menyiapkan PNG…'
+                : 'Download PNG'}
           </button>
         </header>
 
@@ -378,6 +408,8 @@ function FeedPage() {
               ? 'Slide 2 Nasution Boy, potret AI memegang produk.'
               : isInvitationSlide
                 ? 'Slide 7 ajakan memberi rekomendasi kafe estetik.'
+                : isRotiOSlide
+                  ? "Slide 13 promo Roti'O Momen Manis: Rp23.500 dari Rp50.000, klik link lokasi di bawah."
                 : isFontGuideCover
                   ? `Slide ${activeSlide} cover seri rekomendasi font untuk membuat konten.`
                   : activeFontExample
@@ -392,6 +424,8 @@ function FeedPage() {
             containerType: 'inline-size',
             background: isSecondSlide
               ? '#302217'
+              : isRotiOSlide
+                ? '#2a1a10'
               : isInvitationSlide
                 ? 'linear-gradient(180deg, #173d32 0%, #173d32 58%, #f3e8d2 58%, #f3e8d2 100%)'
                 : isFontGuideCover
@@ -448,7 +482,7 @@ function FeedPage() {
               }`}
               draggable={false}
             />
-            {!isSecondSlide && !isFontGuideSeries && (
+            {!isSecondSlide && !isFontGuideSeries && !isRotiOSlide && (
               <>
                 {isInvitationSlide ? (
                   <div className="absolute inset-x-0 top-[72%] z-20 flex -translate-y-1/2 flex-col items-center">
@@ -517,6 +551,7 @@ function FeedPage() {
             )}
           </header>
 
+          {isRotiOSlide && <RotiOPromoSlide />}
           {isFontGuideCover && (
             <div
               className="slide-eight-font-intro"
