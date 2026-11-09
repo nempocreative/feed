@@ -130,7 +130,7 @@
   --ggpi-primary: #e8467c;
   --ggpi-gold: #f6c96b;
   --ggpi-photo-top: 0cqw;
-  --ggpi-shade: linear-gradient(180deg, color-mix(in srgb, #0b0709 72%, transparent) 0%, color-mix(in srgb, #0b0709 30%, transparent) 30%, color-mix(in srgb, #0b0709 0%, transparent) 46%, color-mix(in srgb, #0b0709 0%, transparent) 58%, color-mix(in srgb, #0b0709 78%, transparent) 76%, #0b0709 92%);
+  --ggpi-shade: linear-gradient(180deg, color-mix(in srgb, #0b0709 72%, transparent) 0%, color-mix(in srgb, #0b0709 30%, transparent) 30%, color-mix(in srgb, #0b0709 0%, transparent) 46%, color-mix(in srgb, #0b0709 0%, transparent) 64%, color-mix(in srgb, #0b0709 72%, transparent) 76%, #0b0709 90%);
   --ggpi-text-shadow: 0 .3cqw 1.8cqw color-mix(in srgb, #000000 80%, transparent);
   --ggpi-badge-glow: 0 0 6cqw color-mix(in srgb, #f6c96b 38%, transparent), 0 0 0 .5cqw color-mix(in srgb, #f6c96b 85%, transparent);
 }
