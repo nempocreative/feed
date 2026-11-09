@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "94885da3-dcb6-4b77-8473-c54f4030f5e1",
-  "project_id": "6ead6e30-3605-4ff4-a188-869c1cc100d8",
-  "url": "/__l5e/assets-v1/94885da3-dcb6-4b77-8473-c54f4030f5e1/tion-slide-13-roti-o-cafe-poster.jpg",
-  "r2_key": "a/v1/6ead6e30-3605-4ff4-a188-869c1cc100d8/94885da3-dcb6-4b77-8473-c54f4030f5e1/tion-slide-13-roti-o-cafe-poster.jpg",
-  "original_filename": "tion-slide-13-roti-o-cafe-poster.jpg",
-  "size": 237837,
   "content_type": "image/jpeg",
-  "created_at": "2026-11-09T19:54:09Z"
+  "created_at": "2026-11-09T19:54:09Z",
+  "original_filename": "tion-slide-13-roti-o-cafe-poster.jpg",
+  "project_id": "3e42cbc6-3125-4829-8f4c-9f6d601a1647",
+  "r2_key": "a/v1/3e42cbc6-3125-4829-8f4c-9f6d601a1647/94885da3-dcb6-4b77-8473-c54f4030f5e1/tion-slide-13-roti-o-cafe-poster.jpg",
+  "size": 237837,
+  "url": "/__l5e/assets-v1/94885da3-dcb6-4b77-8473-c54f4030f5e1/tion-slide-13-roti-o-cafe-poster.jpg",
+  "version": 1
 }

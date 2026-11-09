@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "0c0a8118-942c-4135-8d6f-3cd99323fff0",
-  "project_id": "6ead6e30-3605-4ff4-a188-869c1cc100d8",
-  "url": "/__l5e/assets-v1/0c0a8118-942c-4135-8d6f-3cd99323fff0/ggs-men-header-footer.png",
-  "r2_key": "a/v1/6ead6e30-3605-4ff4-a188-869c1cc100d8/0c0a8118-942c-4135-8d6f-3cd99323fff0/ggs-men-header-footer.png",
-  "original_filename": "ggs-men-header-footer.png",
-  "size": 54638,
   "content_type": "image/webp",
-  "created_at": "2026-11-09T19:04:50Z"
+  "created_at": "2026-11-09T19:04:50Z",
+  "original_filename": "ggs-men-header-footer.png",
+  "project_id": "3e42cbc6-3125-4829-8f4c-9f6d601a1647",
+  "r2_key": "a/v1/3e42cbc6-3125-4829-8f4c-9f6d601a1647/0c0a8118-942c-4135-8d6f-3cd99323fff0/ggs-men-header-footer.png",
+  "size": 54638,
+  "url": "/__l5e/assets-v1/0c0a8118-942c-4135-8d6f-3cd99323fff0/ggs-men-header-footer.png",
+  "version": 1
 }

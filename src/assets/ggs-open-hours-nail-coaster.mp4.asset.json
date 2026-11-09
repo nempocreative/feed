@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "e5b26657-2b6c-4935-ab45-f842508d4f38",
-  "project_id": "6ead6e30-3605-4ff4-a188-869c1cc100d8",
-  "url": "/__l5e/assets-v1/e5b26657-2b6c-4935-ab45-f842508d4f38/ggs-open-hours-nail-coaster.mp4",
-  "r2_key": "a/v1/6ead6e30-3605-4ff4-a188-869c1cc100d8/e5b26657-2b6c-4935-ab45-f842508d4f38/ggs-open-hours-nail-coaster.mp4",
-  "original_filename": "ggs-open-hours-nail-coaster.mp4",
-  "size": 10723719,
   "content_type": "video/mp4",
-  "created_at": "2026-11-09T19:04:53Z"
+  "created_at": "2026-11-09T19:04:53Z",
+  "original_filename": "ggs-open-hours-nail-coaster.mp4",
+  "project_id": "3e42cbc6-3125-4829-8f4c-9f6d601a1647",
+  "r2_key": "a/v1/3e42cbc6-3125-4829-8f4c-9f6d601a1647/e5b26657-2b6c-4935-ab45-f842508d4f38/ggs-open-hours-nail-coaster.mp4",
+  "size": 10723719,
+  "url": "/__l5e/assets-v1/e5b26657-2b6c-4935-ab45-f842508d4f38/ggs-open-hours-nail-coaster.mp4",
+  "version": 1
 }

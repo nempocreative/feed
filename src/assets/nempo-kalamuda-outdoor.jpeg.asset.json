@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "fb27d2ab-d2ff-4d0b-a158-d2608b5d2713",
-  "project_id": "6ead6e30-3605-4ff4-a188-869c1cc100d8",
-  "url": "/__l5e/assets-v1/fb27d2ab-d2ff-4d0b-a158-d2608b5d2713/nempo-kalamuda-outdoor.jpeg",
-  "r2_key": "a/v1/6ead6e30-3605-4ff4-a188-869c1cc100d8/fb27d2ab-d2ff-4d0b-a158-d2608b5d2713/nempo-kalamuda-outdoor.jpeg",
-  "original_filename": "nempo-kalamuda-outdoor.jpeg",
-  "size": 144069,
   "content_type": "image/jpeg",
-  "created_at": "2026-11-09T19:06:04Z"
+  "created_at": "2026-11-09T19:06:04Z",
+  "original_filename": "nempo-kalamuda-outdoor.jpeg",
+  "project_id": "3e42cbc6-3125-4829-8f4c-9f6d601a1647",
+  "r2_key": "a/v1/3e42cbc6-3125-4829-8f4c-9f6d601a1647/fb27d2ab-d2ff-4d0b-a158-d2608b5d2713/nempo-kalamuda-outdoor.jpeg",
+  "size": 144069,
+  "url": "/__l5e/assets-v1/fb27d2ab-d2ff-4d0b-a158-d2608b5d2713/nempo-kalamuda-outdoor.jpeg",
+  "version": 1
 }
