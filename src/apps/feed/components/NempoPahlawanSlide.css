@@ -65,7 +65,7 @@
   display: flex; align-items: center; gap: 2.2cqw; margin-top: 2.6cqw !important;
   font-family: 'Space Mono', monospace; font-weight: 700; font-size: 2.6cqw; line-height: 1; color: var(--kmt-text);
   letter-spacing: .14em !important; text-shadow: var(--nphl-text-shadow);
-  animation: nphl-fade-up 13s ease-out infinite both; --in-a: 18%; 
+  animation: nphl-fade-up 13s ease-out infinite both;
 }
 .nphl-rule { display: block; height: .35cqw; width: 9cqw; background: var(--nphl-rule); transform-origin: right center; animation: nphl-rule 13s ease-out infinite both; }
 .nphl-rule-r { transform-origin: left center; }
