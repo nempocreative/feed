@@ -10,6 +10,7 @@ import slide37PngAsset from '@/assets/nempo-feed-slide-37.png.asset.json';
 import slide37VideoAsset from '@/assets/nempo-feed-slide-37.mp4.asset.json';
 import slide44PngAsset from '@/assets/nempo-feed-slide-44.png.asset.json';
 import slide44VideoAsset from '@/assets/nempo-feed-slide-44.mp4.asset.json';
+import slide45PngAsset from '@/assets/nempo-feed-slide-45.png.asset.json';
 import { PrebuiltVideoDownload } from './components/PrebuiltVideoDownload';
 import ggsRatusVideo from '@/assets/ggs-feed-07-ratus-hq.mp4.asset.json';
 import ggsNailCardsVideo from '@/assets/ggs-feed-21-nail-art.mp4.asset.json';
@@ -155,6 +156,8 @@ import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
 import { KalaMudaActivitiesSlide } from './components/KalaMudaActivitiesSlide';
 import { NempoPahlawanSlide } from './components/NempoPahlawanSlide';
 import { NEMPO_PAHLAWAN_SLIDE } from './components/nempo-pahlawan';
+import { NempoCustomerServiceSlide } from './components/NempoCustomerServiceSlide';
+import { NEMPO_CS_SLIDE } from './components/nempo-cs';
 import { KalaMudaDivisionSlide } from './components/KalaMudaDivisionSlide';
 import { DIVISION_SLIDES, divisionForSlide } from './components/kala-muda-divisions';
 import divisionPng38 from '@/assets/nempo-feed-38-divisi-designer.png.asset.json';
@@ -215,7 +218,8 @@ type FeedSlide =
   | 41
   | 42
   | 43
-  | 44;
+  | 44
+  | 45;
 
 type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30;
 
@@ -2846,7 +2850,7 @@ function App() {
   const exportRef = useRef<HTMLElement | null>(null);
   const isNempoFeed = activeFeed === 'nempo';
   const isHighQualityNempoStorySlide =
-    isNempoFeed && activeSlide >= 20 && activeSlide <= 44;
+    isNempoFeed && activeSlide >= 20 && activeSlide <= 45;
   const isCoupon = activeFeed === 'coupon';
   const isQCard = activeFeed === 'qcard';
   const isRundown = activeFeed === 'rundown';
@@ -3150,7 +3154,7 @@ function App() {
       ? isGgsStory
         ? [1, 2, 3, 4, 5]
         : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
-      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE];
+      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
 
@@ -3433,6 +3437,19 @@ function App() {
                 label="Download PNG · 3×"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               />
+            ) : isNempoFeed && activeSlide === NEMPO_CS_SLIDE ? (
+              <>
+                <PrebuiltPngDownload
+                  key="nempo-feed-45"
+                  src={slide45PngAsset.url}
+                  fileName="Nempo-Feed-Slide-45-Layanan-Pelanggan.png"
+                  label="Download PNG · 3×"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
+                </p>
+              </>
             ) : isNempoFeed && activeSlide === 37 ? (
               <PrebuiltPngDownload
                 key="nempo-feed-37"
@@ -3516,7 +3533,7 @@ function App() {
               <>
                 <PrebuiltVideoDownload src={slide44VideoAsset.url} fileName="Nempo-Feed-Slide-44-Hari-Pahlawan.mp4" />
                 <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
-                  Video 13 detik · 1080×1440 · 30 fps dengan suara angin, persis seperti pratinjau. PNG 3240×4320.
+                  Video 13 detik · 1080×1440 · 30 fps · kualitas tinggi dengan suara angin, persis seperti pratinjau. PNG 3240×4320.
                 </p>
               </>
             )}
@@ -3601,6 +3618,8 @@ function App() {
           <KalaMudaDivisionSlide key={activeSlide} division={divisionForSlide(activeSlide)!} exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_PAHLAWAN_SLIDE ? (
           <NempoPahlawanSlide exportRef={exportRef} />
+        ) : isNempoFeed && activeSlide === NEMPO_CS_SLIDE ? (
+          <NempoCustomerServiceSlide exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === 37 ? (
           <KalaMudaActivitiesSlide exportRef={exportRef} />
         ) : isNempoFeed && (activeSlide === 35 || activeSlide === 36) ? (

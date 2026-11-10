@@ -1,0 +1,71 @@
+/* NEMPO Feed slide 45 — layanan pelanggan. Colors live in src/styles.css (.ncs-root). */
+.ncs-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--ncs-bg); color: var(--kmt-text);
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+}
+.ncs-root * { letter-spacing: 0; box-sizing: border-box; }
+.ncs-root p, .ncs-root h2 { margin: 0; padding: 0; }
+.ncs-root a { text-decoration: none; }
+.ncs-root .ncs-channel { color: inherit; }
+
+.ncs-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.ncs-grid { position: absolute; inset: 0; background-image: var(--kmt-grid); background-size: 6cqw 6cqw; mask-image: radial-gradient(circle at 72% 34%, #000 0%, transparent 62%); }
+.ncs-ring { position: absolute; border-radius: 50%; border: .3cqw solid var(--kmt-line); }
+.ncs-ring-a { width: 74cqw; height: 74cqw; right: -18cqw; top: 10cqw; }
+.ncs-ring-b { width: 54cqw; height: 54cqw; right: -8cqw; top: 20cqw; border-style: dashed; animation: ncs-spin 60s linear infinite; }
+.ncs-glow { position: absolute; width: 70cqw; height: 70cqw; right: -14cqw; top: 12cqw; background: var(--ncs-glow); }
+@keyframes ncs-spin { to { transform: rotate(360deg); } }
+
+.ncs-hero { position: absolute; z-index: 3; top: 30cqw; left: 7.5cqw; width: 50cqw; display: flex; flex-direction: column; align-items: flex-start; gap: 3cqw; }
+.ncs-kicker {
+  display: inline-flex; align-items: center; gap: 1.2cqw; padding: 1cqw 2.2cqw 1cqw 1.8cqw; border-radius: 99px;
+  background: var(--ncs-yellow); color: var(--ncs-navy); font-size: 1.9cqw; font-weight: 800; line-height: 1;
+  text-transform: uppercase; letter-spacing: .1em !important;
+}
+.ncs-kicker svg { width: 2.4cqw; height: 2.4cqw; }
+.ncs-title { font-size: 7.6cqw; font-weight: 800; line-height: 1.02; letter-spacing: -.02em !important; text-shadow: var(--ncs-text-shadow); }
+.ncs-title em { font-style: normal; color: var(--ncs-yellow); }
+.ncs-sub { font-size: 2.6cqw; font-weight: 500; line-height: 1.38; color: var(--ncs-soft); max-width: 46cqw; }
+
+.ncs-art {
+  position: absolute; z-index: 2; right: 1.5cqw; top: 26cqw; width: 42cqw; height: auto;
+  filter: drop-shadow(0 3cqw 4cqw var(--ncs-art-shadow)); animation: ncs-float 6s ease-in-out infinite;
+}
+@keyframes ncs-float { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-1.6cqw) rotate(1deg); } }
+
+.ncs-bottom { position: absolute; z-index: 3; left: 7.5cqw; right: 7.5cqw; bottom: 7.5cqw; display: flex; flex-direction: column; gap: 3cqw; }
+
+.ncs-wa {
+  display: flex; align-items: center; gap: 3cqw; padding: 3cqw 3cqw 3cqw 3cqw; border-radius: 4.4cqw;
+  background: var(--ncs-card); color: var(--ncs-navy) !important; box-shadow: var(--ncs-card-shadow);
+}
+.ncs-wa-icon { flex: none; display: grid; place-items: center; width: 11cqw; height: 11cqw; border-radius: 50%; background: var(--ncs-wa); color: var(--ncs-card); }
+.ncs-wa-icon svg { width: 6cqw; height: 6cqw; }
+.ncs-wa-text { flex: 1; display: flex; flex-direction: column; gap: 1.3cqw; line-height: 1; }
+.ncs-wa-text span { font-size: 2.2cqw; font-weight: 600; color: var(--ncs-navy-soft); }
+.ncs-wa-text strong { font-size: 5.6cqw; font-weight: 800; letter-spacing: -.01em !important; }
+.ncs-wa-go { flex: none; display: grid; place-items: center; width: 8cqw; height: 8cqw; border-radius: 50%; background: var(--ncs-yellow); color: var(--ncs-navy); }
+.ncs-wa-go svg { width: 4.4cqw; height: 4.4cqw; }
+
+.ncs-channels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4cqw; }
+.ncs-channel {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 1.4cqw; padding: 2.6cqw 2.6cqw 2.8cqw; border-radius: 3.4cqw;
+  background: var(--ncs-glass); border: 1px solid var(--kmt-line-strong); line-height: 1;
+}
+.ncs-channel-icon { display: grid; place-items: center; width: 6.4cqw; height: 6.4cqw; border-radius: 1.8cqw; color: var(--ncs-card); margin-bottom: .6cqw; }
+.ncs-channel-icon svg { width: 3.4cqw; height: 3.4cqw; }
+.ncs-channel--instagram .ncs-channel-icon { background: var(--ncs-ig); }
+.ncs-channel--tiktok .ncs-channel-icon { background: var(--ncs-tt); }
+.ncs-channel--telegram .ncs-channel-icon { background: var(--ncs-tg); }
+.ncs-channel-name { font-size: 1.9cqw; font-weight: 500; color: var(--ncs-soft); }
+.ncs-channel strong { font-size: 2.6cqw; font-weight: 800; }
+
+.ncs-services { display: flex; align-items: center; gap: 2cqw; padding-top: 3cqw; border-top: 1px solid var(--kmt-line-strong); line-height: 1; }
+.ncs-services-label { flex: none; font-size: 1.7cqw; font-weight: 700; text-transform: uppercase; letter-spacing: .1em !important; color: var(--ncs-yellow); }
+.ncs-services-list { display: flex; flex-wrap: nowrap; gap: 1.2cqw; }
+.ncs-services-list span { padding: 1cqw 1.8cqw; border-radius: 99px; background: var(--kmt-pill-strong); font-size: 1.8cqw; font-weight: 600; white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ncs-art, .ncs-ring-b { animation: none; }
+}

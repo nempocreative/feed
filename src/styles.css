@@ -244,6 +244,24 @@
   --kmt-pill: color-mix(in srgb, #062f4d 30%, transparent);
   --kmt-pill-strong: color-mix(in srgb, #062f4d 80%, transparent);
 }
+/* Nempo Feed slide 45: layanan pelanggan (NEMPO blue + yellow). */
+.ncs-root {
+  --ncs-bg: radial-gradient(circle at 74% 30%, #1a7fd6 0%, #0b4f93 45%, #062f4d 100%);
+  --ncs-glow: radial-gradient(circle, color-mix(in srgb, #ffdd00 26%, transparent) 0%, color-mix(in srgb, #5fb4ff 18%, transparent) 38%, transparent 68%);
+  --ncs-yellow: #ffdd00;
+  --ncs-navy: #062f4d;
+  --ncs-navy-soft: color-mix(in srgb, #062f4d 62%, transparent);
+  --ncs-soft: color-mix(in srgb, #ffffff 80%, transparent);
+  --ncs-card: #ffffff;
+  --ncs-card-shadow: 0 2.4cqw 6cqw color-mix(in srgb, #021a2e 45%, transparent);
+  --ncs-glass: color-mix(in srgb, #062f4d 48%, transparent);
+  --ncs-art-shadow: color-mix(in srgb, #021a2e 55%, transparent);
+  --ncs-text-shadow: 0 .5cqw 2cqw color-mix(in srgb, #021a2e 40%, transparent);
+  --ncs-wa: #25d366;
+  --ncs-ig: linear-gradient(135deg, #f9a43b 0%, #e1306c 50%, #8a3ab9 100%);
+  --ncs-tt: #111111;
+  --ncs-tg: #229ed9;
+}
 /* Nempo Feed slide 44: Hari Pahlawan (crimson dawn + gold). */
 .nphl-root {
   --nphl-night: #140406;
@@ -252,7 +270,8 @@
   --nphl-cream: #fff3dd;
   --nphl-drop: color-mix(in srgb, #1a0204 75%, transparent);
   --nphl-text-shadow: 0 .4cqw 1.6cqw color-mix(in srgb, #1a0204 85%, transparent), 0 0 .5cqw color-mix(in srgb, #1a0204 60%, transparent);
-  --nphl-rule: linear-gradient(90deg, transparent, #ffd36a 40%, #ffd36a 60%, transparent);
+  --nphl-flag-red: #d7262e;
+  --nphl-flag-white: #fff7ec;
   --nphl-shade: linear-gradient(180deg, color-mix(in srgb, #140406 78%, transparent) 0%, color-mix(in srgb, #140406 35%, transparent) 30%, transparent 45%, transparent 62%, color-mix(in srgb, #140406 55%, transparent) 76%, color-mix(in srgb, #140406 92%, transparent) 100%);
   --nphl-sun-glow: radial-gradient(circle, color-mix(in srgb, #ffc65a 45%, transparent) 0%, color-mix(in srgb, #ff7a2a 18%, transparent) 40%, transparent 70%);
   --nphl-ember: #ffc768;
