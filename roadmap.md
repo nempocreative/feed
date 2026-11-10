@@ -24,3 +24,4 @@
 - [ ] NEMPO Feed slide 44: creative but not tacky ("jangan alay") fonts; re-record MP4/PNG
 - [ ] NEMPO Feed slide 44: static text (no text animation), replace the lines beside the year, replace the italic serif font; re-record MP4/PNG
 - [ ] NEMPO Feed slide 44: more breathing room around the "81" chip; center the Hari Pahlawan title; re-record MP4/PNG
+- [ ] NEMPO Feed slide 44: smaller text with even spacing; re-record MP4/PNG
