@@ -155,6 +155,8 @@ import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
 import { KalaMudaActivitiesSlide } from './components/KalaMudaActivitiesSlide';
 import { NempoPahlawanSlide } from './components/NempoPahlawanSlide';
 import { NEMPO_PAHLAWAN_SLIDE } from './components/nempo-pahlawan';
+import { NempoCustomerServiceSlide } from './components/NempoCustomerServiceSlide';
+import { NEMPO_CS_SLIDE } from './components/nempo-cs';
 import { KalaMudaDivisionSlide } from './components/KalaMudaDivisionSlide';
 import { DIVISION_SLIDES, divisionForSlide } from './components/kala-muda-divisions';
 import divisionPng38 from '@/assets/nempo-feed-38-divisi-designer.png.asset.json';
@@ -2846,7 +2848,7 @@ function App() {
   const exportRef = useRef<HTMLElement | null>(null);
   const isNempoFeed = activeFeed === 'nempo';
   const isHighQualityNempoStorySlide =
-    isNempoFeed && activeSlide >= 20 && activeSlide <= 44;
+    isNempoFeed && activeSlide >= 20 && activeSlide <= 45;
   const isCoupon = activeFeed === 'coupon';
   const isQCard = activeFeed === 'qcard';
   const isRundown = activeFeed === 'rundown';
@@ -3150,7 +3152,7 @@ function App() {
       ? isGgsStory
         ? [1, 2, 3, 4, 5]
         : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
-      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE];
+      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
 
@@ -3601,6 +3603,8 @@ function App() {
           <KalaMudaDivisionSlide key={activeSlide} division={divisionForSlide(activeSlide)!} exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_PAHLAWAN_SLIDE ? (
           <NempoPahlawanSlide exportRef={exportRef} />
+        ) : isNempoFeed && activeSlide === NEMPO_CS_SLIDE ? (
+          <NempoCustomerServiceSlide exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === 37 ? (
           <KalaMudaActivitiesSlide exportRef={exportRef} />
         ) : isNempoFeed && (activeSlide === 35 || activeSlide === 36) ? (
