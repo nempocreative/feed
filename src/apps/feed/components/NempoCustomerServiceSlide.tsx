@@ -1,12 +1,12 @@
 import type { RefObject } from 'react';
-import { ArrowUpRight, Headset, Heart, PartyPopper, Sparkles } from 'lucide-react';
+import { ArrowUpRight, CalendarCheck, Gem, Headset, PenTool } from 'lucide-react';
 import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import { NempoHeader } from './KalaMudaRecruitSlide';
 import { nempoCs } from './nempo-cs';
 import './NempoCustomerServiceSlide.css';
 
 const CHANNEL_ICONS = { instagram: FaInstagram, tiktok: FaTiktok } as const;
-const SERVICE_ICONS = { eo: PartyPopper, wo: Heart, creative: Sparkles } as const;
+const SERVICE_ICONS = { eo: CalendarCheck, wo: Gem, creative: PenTool } as const;
 
 /** NEMPO Feed slide 45: layanan pelanggan — EO / WO / Creative + admin channels. */
 export function NempoCustomerServiceSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {

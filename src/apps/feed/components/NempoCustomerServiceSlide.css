@@ -66,8 +66,8 @@
 .ncs-service--wo { background: var(--ncs-tile-wo); }
 .ncs-service--creative { background: var(--ncs-tile-creative); }
 .ncs-service::after { content: ''; position: absolute; right: -6cqw; top: -6cqw; width: 16cqw; height: 16cqw; border-radius: 50%; background: var(--ncs-tile-shine); }
-.ncs-service-icon { position: absolute; z-index: 1; top: 2.6cqw; right: 2.6cqw; display: grid; place-items: center; width: 4cqw; height: 4cqw; border-radius: 50%; border: 1.5px solid currentColor; color: var(--ncs-navy); opacity: .8; }
-.ncs-service-icon svg { width: 2cqw; height: 2cqw; stroke-width: 2; }
+.ncs-service-icon { position: absolute; z-index: 1; top: 2.6cqw; right: 2.6cqw; display: grid; place-items: center; width: 4.6cqw; height: 4.6cqw; border-radius: 1.3cqw; background: var(--ncs-navy); color: var(--ncs-card); box-shadow: 0 .6cqw 1.4cqw color-mix(in srgb, var(--ncs-navy) 30%, transparent); }
+.ncs-service-icon svg { width: 2.3cqw; height: 2.3cqw; stroke-width: 1.75; }
 .ncs-service strong { margin-top: 5cqw; }
 .ncs-service strong { font-size: 6.8cqw; font-weight: 800; letter-spacing: -.03em !important; }
 .ncs-service-desc { margin-top: 1.3cqw; font-size: 1.9cqw; font-weight: 600; color: var(--ncs-navy-soft); white-space: nowrap; }
