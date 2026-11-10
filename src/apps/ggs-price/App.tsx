@@ -1,7 +1,20 @@
 import { useLayoutEffect, useRef, type CSSProperties } from 'react';
-import { Clock3, Download, Printer, Scissors } from 'lucide-react';
+import { Clock3, Download, ImageDown, Printer, Scissors } from 'lucide-react';
 import background from '@/apps/ggs-price/assets/ggs-price-a4-background.jpg.asset.json';
 import { GGS_PRICE_CONTACT, GGS_PRICE_PAGES, type PricePage } from '@/apps/ggs-price/price-list';
+import png1 from '@/apps/ggs-price/assets/png/halaman-1.png.asset.json';
+import png2 from '@/apps/ggs-price/assets/png/halaman-2.png.asset.json';
+import png3 from '@/apps/ggs-price/assets/png/halaman-3.png.asset.json';
+import png4 from '@/apps/ggs-price/assets/png/halaman-4.png.asset.json';
+import png5 from '@/apps/ggs-price/assets/png/halaman-5.png.asset.json';
+import png6 from '@/apps/ggs-price/assets/png/halaman-6.png.asset.json';
+import png7 from '@/apps/ggs-price/assets/png/halaman-7.png.asset.json';
+import png8 from '@/apps/ggs-price/assets/png/halaman-8.png.asset.json';
+import pngZip from '@/apps/ggs-price/assets/png/semua-halaman.zip.asset.json';
+
+// Prebuilt 300 dpi A4 PNGs (2480 × 3508), one per page in GGS_PRICE_PAGES order.
+// Regenerate with scripts/export-ggs-price-png.py whenever the list changes.
+const PRINT_PNGS = [png1, png2, png3, png4, png5, png6, png7, png8];
 
 const PT = (n: number) => `calc(${n} * var(--pt))`;
 
@@ -107,6 +120,9 @@ export default function App() {
           <a className="ggpr-btn" href="/ggs-price-list/GGS-Price-List-A4-v2.pdf?v=20261109d" download="GGS-Price-List-A4.pdf">
             <Download size={16} aria-hidden /> Download PDF
           </a>
+          <a className="ggpr-btn" href={pngZip.url} download="GGS-Price-List-A4-PNG-300dpi.zip">
+            <ImageDown size={16} aria-hidden /> PNG Cetak (semua)
+          </a>
           <button type="button" className="ggpr-btn" onClick={() => window.print()}>
             <Printer size={16} aria-hidden /> Cetak
           </button>
@@ -116,7 +132,14 @@ export default function App() {
       <main className="ggpr-pages" ref={mainRef}>
         {GGS_PRICE_PAGES.map((page, i) => (
           <div key={page.id} className="ggpr-page-wrap">
-            <p className="ggpr-page-no">Halaman {i + 1}</p>
+            <div className="ggpr-page-no">
+              <span>Halaman {i + 1}</span>
+              {PRINT_PNGS[i] && (
+                <a className="ggpr-page-png" href={PRINT_PNGS[i].url} download={`GGS-Price-List-A4-Halaman-${i + 1}.png`}>
+                  <ImageDown size={13} aria-hidden /> PNG 300 dpi
+                </a>
+              )}
+            </div>
             <A4Page page={page} />
           </div>
         ))}

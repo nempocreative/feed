@@ -6,6 +6,11 @@ describe('GGS A4 price list', () => {
     expect(GGS_PRICE_PAGES).toHaveLength(8);
   });
 
+  it('has one print PNG per page', () => {
+    const pngs = Object.keys(import.meta.glob('./assets/png/halaman-*.png.asset.json'));
+    expect(pngs).toHaveLength(GGS_PRICE_PAGES.length);
+  });
+
   it('keeps nail art prices from the owner file', () => {
     expect(findGgsPrice('Press On Nail')).toBe('50.000 - 100.000');
     expect(findGgsPrice('Kuku palsu fullcateye + Chrome')).toBe('250.000');
