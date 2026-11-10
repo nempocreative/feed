@@ -3516,7 +3516,7 @@ function App() {
               <>
                 <PrebuiltVideoDownload src={slide44VideoAsset.url} fileName="Nempo-Feed-Slide-44-Hari-Pahlawan.mp4" />
                 <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
-                  Video 13 detik · 1080×1440 · 30 fps dengan suara angin, persis seperti pratinjau. PNG 3240×4320.
+                  Video 13 detik · 1080×1440 · 30 fps · kualitas tinggi dengan suara angin, persis seperti pratinjau. PNG 3240×4320.
                 </p>
               </>
             )}
