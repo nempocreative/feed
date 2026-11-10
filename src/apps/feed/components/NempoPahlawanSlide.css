@@ -53,7 +53,7 @@
 /* Bottom: years, quote, closing */
 .nphl-bottom { position: absolute; z-index: 3; left: 7.5cqw; right: 7.5cqw; bottom: 17cqw; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .nphl-years {
-  display: inline-flex; align-items: center; gap: 2cqw; padding: 1.6cqw 4.4cqw 1.6cqw 4cqw; border-radius: 99px;
+  display: inline-flex; align-items: center; gap: 2cqw; padding: 1.5cqw 4.2cqw 1.5cqw 3.6cqw !important; border-radius: 99px;
   background: var(--nphl-chip); border: 1px solid var(--nphl-chip-line); color: var(--kmt-text);
   font-family: var(--nphl-font); font-size: 2.2cqw; font-weight: 600; letter-spacing: .12em !important; text-transform: uppercase;
 }
