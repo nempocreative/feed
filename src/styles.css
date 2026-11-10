@@ -260,7 +260,6 @@
   --ncs-wa: #25d366;
   --ncs-ig: linear-gradient(135deg, #f9a43b 0%, #e1306c 50%, #8a3ab9 100%);
   --ncs-tt: #111111;
-  --ncs-band: linear-gradient(90deg, transparent 0%, color-mix(in srgb, #ffdd00 10%, transparent) 30%, color-mix(in srgb, #ffdd00 18%, transparent) 50%, color-mix(in srgb, #ffdd00 10%, transparent) 70%, transparent 100%);
   --ncs-tile-eo: linear-gradient(150deg, #ffe94d 0%, #ffd000 100%);
   --ncs-tile-wo: linear-gradient(150deg, #ffffff 0%, #e8f2ff 100%);
   --ncs-tile-creative: linear-gradient(150deg, #8fd0ff 0%, #4fa8f5 100%);

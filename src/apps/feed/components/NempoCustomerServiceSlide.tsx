@@ -23,7 +23,6 @@ export function NempoCustomerServiceSlide({ exportRef }: { exportRef?: RefObject
         <span className="ncs-ring ncs-ring-a" />
         <span className="ncs-ring ncs-ring-b" />
         <span className="ncs-glow" />
-        <span className="ncs-band" />
       </div>
 
       <NempoHeader badge={badge} />
