@@ -29,7 +29,7 @@
 }
 
 /* Title (static text) */
-.nphl-title-block { position: absolute; z-index: 3; top: 19.5cqw; left: 7.5cqw; right: 26cqw; }
+.nphl-title-block { position: absolute; z-index: 3; top: 18.5cqw; left: 7.5cqw; right: 7.5cqw; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .nphl-kicker {
   font-family: var(--nphl-font); font-weight: 600; font-size: 2.3cqw; line-height: 1; letter-spacing: .28em !important;
   text-transform: uppercase; color: var(--nphl-gold-soft); text-shadow: var(--nphl-text-shadow);
@@ -42,7 +42,7 @@
   font-size: 15.5cqw; text-transform: uppercase; letter-spacing: -.01em !important; color: var(--nphl-gold);
 }
 .nphl-date {
-  display: flex; align-items: center; gap: 1.8cqw; margin-top: 2.8cqw !important;
+  display: flex; align-items: center; justify-content: center; gap: 1.8cqw; margin-top: 2.8cqw !important;
   font-family: var(--nphl-font); font-weight: 600; font-size: 2.6cqw; line-height: 1; color: var(--kmt-text);
   letter-spacing: .22em !important; text-shadow: var(--nphl-text-shadow);
 }
@@ -53,12 +53,12 @@
 /* Bottom: years, quote, closing */
 .nphl-bottom { position: absolute; z-index: 3; left: 7.5cqw; right: 7.5cqw; bottom: 17cqw; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .nphl-years {
-  display: inline-flex; align-items: baseline; gap: 1.4cqw; padding: 1cqw 3.4cqw 1cqw 2.8cqw; border-radius: 99px;
+  display: inline-flex; align-items: center; gap: 2cqw; padding: 1.6cqw 4.4cqw 1.6cqw 4cqw; border-radius: 99px;
   background: var(--nphl-chip); border: 1px solid var(--nphl-chip-line); color: var(--kmt-text);
   font-family: var(--nphl-font); font-size: 2.2cqw; font-weight: 600; letter-spacing: .12em !important; text-transform: uppercase;
 }
 .nphl-years b { font-family: var(--nphl-font); font-size: 3.6cqw; font-weight: 800; line-height: .8; color: var(--nphl-gold); letter-spacing: 0 !important; }
-.nphl-quote { margin-top: 2.8cqw !important; }
+.nphl-quote { margin-top: 4cqw !important; }
 .nphl-quote p {
   font-family: var(--nphl-font); font-weight: 400; font-size: 4.3cqw; line-height: 1.2; letter-spacing: -.01em !important; color: var(--nphl-cream);
   text-shadow: var(--nphl-text-shadow);
