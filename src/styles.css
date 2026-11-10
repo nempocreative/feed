@@ -260,7 +260,10 @@
   --ncs-wa: #25d366;
   --ncs-ig: linear-gradient(135deg, #f9a43b 0%, #e1306c 50%, #8a3ab9 100%);
   --ncs-tt: #111111;
-  --ncs-tg: #229ed9;
+  --ncs-tile-eo: linear-gradient(150deg, #ffe94d 0%, #ffd000 100%);
+  --ncs-tile-wo: linear-gradient(150deg, #ffffff 0%, #e8f2ff 100%);
+  --ncs-tile-creative: linear-gradient(150deg, #8fd0ff 0%, #4fa8f5 100%);
+  --ncs-tile-shine: color-mix(in srgb, #ffffff 30%, transparent);
 }
 /* Nempo Feed slide 44: Hari Pahlawan (crimson dawn + gold). */
 .nphl-root {

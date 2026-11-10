@@ -10,7 +10,10 @@ describe('NEMPO customer service slide', () => {
     expect(nempoCs.whatsapp.href).toBe(waLink(nempoCs.whatsapp.number));
     expect(nempoCs.whatsapp.href).toBe('https://wa.me/6285724981356');
   });
-  it('lists Instagram, TikTok and Telegram handles', () => {
-    expect(nempoCs.channels.map((c) => c.handle)).toEqual(['@nempo.id', '@nempo.id', '@nempoid']);
+  it('shows only Instagram and TikTok besides WhatsApp (no Telegram)', () => {
+    expect(nempoCs.channels.map((c) => c.name)).toEqual(['Instagram', 'TikTok']);
+  });
+  it('emphasizes EO, WO and Creative', () => {
+    expect(nempoCs.services.map((s) => s.label)).toEqual(['EO', 'WO', 'Creative']);
   });
 });

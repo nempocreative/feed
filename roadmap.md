@@ -27,3 +27,4 @@
 - [x] NEMPO Feed slide 44: smaller text with even spacing; re-record MP4/PNG
 - [x] NEMPO Feed slide 44: precise, even spacing for the bottom text block; re-record MP4/PNG
 - [x] NEMPO Feed slide 45: NEMPO customer service (layanan pelanggan) design with download
+- [x] NEMPO Feed slide 45: more attractive, no Telegram, emphasize EO / WO / Creative; re-capture PNG
