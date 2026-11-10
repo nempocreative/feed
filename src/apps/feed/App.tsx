@@ -8,6 +8,8 @@ import slide35PngAsset from '@/assets/nempo-feed-slide-35.png.asset.json';
 import slide36PngAsset from '@/assets/nempo-feed-slide-36.png.asset.json';
 import slide37PngAsset from '@/assets/nempo-feed-slide-37.png.asset.json';
 import slide37VideoAsset from '@/assets/nempo-feed-slide-37.mp4.asset.json';
+import slide44PngAsset from '@/assets/nempo-feed-slide-44.png.asset.json';
+import slide44VideoAsset from '@/assets/nempo-feed-slide-44.mp4.asset.json';
 import { PrebuiltVideoDownload } from './components/PrebuiltVideoDownload';
 import ggsRatusVideo from '@/assets/ggs-feed-07-ratus-hq.mp4.asset.json';
 import ggsNailCardsVideo from '@/assets/ggs-feed-21-nail-art.mp4.asset.json';
@@ -3423,6 +3425,14 @@ function App() {
                   PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
                 </p>
               </>
+            ) : isNempoFeed && activeSlide === NEMPO_PAHLAWAN_SLIDE ? (
+              <PrebuiltPngDownload
+                key="nempo-feed-44"
+                src={slide44PngAsset.url}
+                fileName="Nempo-Feed-Slide-44-Hari-Pahlawan.png"
+                label="Download PNG · 3×"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              />
             ) : isNempoFeed && activeSlide === 37 ? (
               <PrebuiltPngDownload
                 key="nempo-feed-37"
@@ -3501,6 +3511,14 @@ function App() {
             )}
             {isNempoFeed && activeSlide === 37 && (
               <PrebuiltVideoDownload src={slide37VideoAsset.url} fileName="Nempo-Feed-Slide-37-Kala-Muda-Kegiatan.mp4" />
+            )}
+            {isNempoFeed && activeSlide === NEMPO_PAHLAWAN_SLIDE && (
+              <>
+                <PrebuiltVideoDownload src={slide44VideoAsset.url} fileName="Nempo-Feed-Slide-44-Hari-Pahlawan.mp4" />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  Video 13 detik · 1080×1440 · 30 fps dengan suara angin, persis seperti pratinjau. PNG 3240×4320.
+                </p>
+              </>
             )}
             {isNempoFeed && (activeSlide === 35 || activeSlide === 36) && (
               <>
