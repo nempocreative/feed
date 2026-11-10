@@ -5,15 +5,18 @@ export const nempoCs = {
   badge: 'Hubungi Kami',
   kicker: 'Layanan Pelanggan',
   title: ['Ada yang bisa', 'kami bantu?'],
-  subtitle: 'Tanya, konsultasi, atau order desain — langsung chat admin NEMPO.',
+  subtitle: 'Mau bikin acara, pernikahan, atau konten kreatif? Langsung chat admin NEMPO.',
+  servicesLabel: 'Layanan NEMPO',
+  services: [
+    { key: 'eo', label: 'EO', desc: 'Event Organizer' },
+    { key: 'wo', label: 'WO', desc: 'Wedding Organizer' },
+    { key: 'creative', label: 'Creative', desc: 'Desain & Konten' },
+  ],
   whatsapp: { label: 'Chat admin via WhatsApp', number: '0857 2498 1356', href: 'https://wa.me/6285724981356' },
   channels: [
     { key: 'instagram', name: 'Instagram', handle: '@nempo.id', href: 'https://instagram.com/nempo.id' },
     { key: 'tiktok', name: 'TikTok', handle: '@nempo.id', href: 'https://www.tiktok.com/@nempo.id' },
-    { key: 'telegram', name: 'Telegram', handle: '@nempoid', href: 'https://t.me/nempoid' },
   ],
-  servicesLabel: 'Siap bantu order',
-  services: ['Desain Branding Usaha', 'Poster Produk', 'Greeting Card'],
 } as const;
 
 /** wa.me link for an Indonesian 08… number. */
