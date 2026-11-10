@@ -10,7 +10,7 @@ describe('NEMPO Hari Pahlawan slide', () => {
     expect(nempoPahlawan.yearsSinceBattle).toBe(81);
   });
 
-  it('loops the text animation over exactly two background video passes', () => {
+  it('the downloadable video covers exactly two background video passes', () => {
     expect(NEMPO_PAHLAWAN_LOOP_SECONDS).toBe(NEMPO_PAHLAWAN_VIDEO_SECONDS * 2);
   });
 });
