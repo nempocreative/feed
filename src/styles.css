@@ -252,7 +252,8 @@
   --nphl-cream: #fff3dd;
   --nphl-drop: color-mix(in srgb, #1a0204 75%, transparent);
   --nphl-text-shadow: 0 .4cqw 1.6cqw color-mix(in srgb, #1a0204 85%, transparent), 0 0 .5cqw color-mix(in srgb, #1a0204 60%, transparent);
-  --nphl-rule: linear-gradient(90deg, transparent, #ffd36a 40%, #ffd36a 60%, transparent);
+  --nphl-flag-red: #d7262e;
+  --nphl-flag-white: #fff7ec;
   --nphl-shade: linear-gradient(180deg, color-mix(in srgb, #140406 78%, transparent) 0%, color-mix(in srgb, #140406 35%, transparent) 30%, transparent 45%, transparent 62%, color-mix(in srgb, #140406 55%, transparent) 76%, color-mix(in srgb, #140406 92%, transparent) 100%);
   --nphl-sun-glow: radial-gradient(circle, color-mix(in srgb, #ffc65a 45%, transparent) 0%, color-mix(in srgb, #ff7a2a 18%, transparent) 40%, transparent 70%);
   --nphl-ember: #ffc768;

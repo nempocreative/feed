@@ -37,7 +37,6 @@ export function NempoPahlawanSlide({ exportRef }: { exportRef?: RefObject<HTMLEl
   }, [paused, reduced, replayKey]);
 
   const { kicker, titleLines, dateLabel, battleYear, year, yearsSinceBattle, quote, quoteBy, closing } = nempoPahlawan;
-  let letterIndex = 0;
 
   return (
     <div className="w-full max-w-[430px]">
@@ -85,20 +84,14 @@ export function NempoPahlawanSlide({ exportRef }: { exportRef?: RefObject<HTMLEl
 
           <div className="nphl-title-block">
             <p className="nphl-kicker">{kicker}</p>
-            <h2 className="nphl-title" aria-label={titleLines.join(' ')}>
+            <h2 className="nphl-title">
               {titleLines.map((line, lineIdx) => (
-                <span key={line} className={`nphl-line nphl-line-${lineIdx + 1}`} aria-hidden="true">
-                  {line.split('').map((char) => {
-                    const i = letterIndex++;
-                    return <span key={i} className="nphl-letter" style={{ '--i': i } as CSSProperties}>{char}</span>;
-                  })}
-                </span>
+                <span key={line} className={`nphl-line nphl-line-${lineIdx + 1}`}>{line}</span>
               ))}
             </h2>
             <p className="nphl-date">
-              <span className="nphl-rule" aria-hidden="true" />
+              <span className="nphl-flag" aria-hidden="true"><i /><i /></span>
               {battleYear} — {year}
-              <span className="nphl-rule nphl-rule-r" aria-hidden="true" />
             </p>
           </div>
 
@@ -112,7 +105,6 @@ export function NempoPahlawanSlide({ exportRef }: { exportRef?: RefObject<HTMLEl
           </div>
 
           <NempoFooter />
-          <span className="nphl-veil" aria-hidden="true" />
         </div>
       </div>
     </div>
