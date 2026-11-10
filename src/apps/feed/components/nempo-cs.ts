@@ -2,6 +2,7 @@
 export const NEMPO_CS_SLIDE = 45;
 
 export const nempoCs = {
+  badge: 'Hubungi Kami',
   kicker: 'Layanan Pelanggan',
   title: ['Ada yang bisa', 'kami bantu?'],
   subtitle: 'Tanya, konsultasi, atau order desain — langsung chat admin NEMPO.',

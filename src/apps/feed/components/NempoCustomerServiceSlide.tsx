@@ -10,7 +10,7 @@ const ICONS = { instagram: FaInstagram, tiktok: FaTiktok, telegram: FaTelegram }
 
 /** NEMPO Feed slide 45: layanan pelanggan with all admin channels. */
 export function NempoCustomerServiceSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
-  const { kicker, title, subtitle, whatsapp, channels, servicesLabel, services } = nempoCs;
+  const { badge, kicker, title, subtitle, whatsapp, channels, servicesLabel, services } = nempoCs;
   return (
     <section
       ref={exportRef as RefObject<HTMLElement>}
@@ -24,7 +24,7 @@ export function NempoCustomerServiceSlide({ exportRef }: { exportRef?: RefObject
         <span className="ncs-glow" />
       </div>
 
-      <NempoHeader badge={kicker} />
+      <NempoHeader badge={badge} />
 
       <div className="ncs-hero">
         <span className="ncs-kicker"><Headset aria-hidden="true" />{kicker}</span>
