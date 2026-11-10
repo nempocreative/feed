@@ -255,7 +255,7 @@
   --ncs-card: #ffffff;
   --ncs-card-shadow: 0 2.4cqw 6cqw color-mix(in srgb, #021a2e 45%, transparent);
   --ncs-glass: color-mix(in srgb, #062f4d 48%, transparent);
-  --ncs-art-shadow: color-mix(in srgb, #021a2e 55%, transparent);
+  --ncs-chip: color-mix(in srgb, #ffffff 16%, transparent);
   --ncs-text-shadow: 0 .5cqw 2cqw color-mix(in srgb, #021a2e 40%, transparent);
   --ncs-wa: #25d366;
   --ncs-ig: linear-gradient(135deg, #f9a43b 0%, #e1306c 50%, #8a3ab9 100%);

@@ -6,6 +6,12 @@ export const nempoCs = {
   kicker: 'Layanan Pelanggan',
   title: ['Ada yang bisa', 'kami bantu?'],
   subtitle: 'Mau bikin acara, pernikahan, atau konten kreatif? Langsung chat admin NEMPO.',
+  chat: {
+    name: 'Admin NEMPO',
+    status: 'Online',
+    customer: 'Halo admin, mau tanya paket WO',
+    admin: 'Siap kak, kami bantu sekarang ya!',
+  },
   servicesLabel: 'Layanan NEMPO',
   services: [
     { key: 'eo', label: 'EO', desc: 'Event Organizer' },

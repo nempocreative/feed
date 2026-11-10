@@ -1,7 +1,6 @@
 import type { RefObject } from 'react';
 import { ArrowUpRight, Headset, Heart, PartyPopper, Sparkles } from 'lucide-react';
 import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
-import headsetAsset from '@/assets/nempo-feed-45-cs-headset.png.asset.json';
 import { NempoHeader } from './KalaMudaRecruitSlide';
 import { nempoCs } from './nempo-cs';
 import './NempoCustomerServiceSlide.css';
@@ -11,7 +10,7 @@ const SERVICE_ICONS = { eo: PartyPopper, wo: Heart, creative: Sparkles } as cons
 
 /** NEMPO Feed slide 45: layanan pelanggan — EO / WO / Creative + admin channels. */
 export function NempoCustomerServiceSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
-  const { badge, kicker, title, subtitle, servicesLabel, services, whatsapp, channels } = nempoCs;
+  const { badge, kicker, title, subtitle, chat, servicesLabel, services, whatsapp, channels } = nempoCs;
   return (
     <section
       ref={exportRef as RefObject<HTMLElement>}
@@ -35,7 +34,18 @@ export function NempoCustomerServiceSlide({ exportRef }: { exportRef?: RefObject
         <p className="ncs-sub">{subtitle}</p>
       </div>
 
-      <img className="ncs-art" src={headsetAsset.url} alt="" width={869} height={768} draggable={false} />
+      <div className="ncs-chat" aria-hidden="true">
+        <div className="ncs-chat-head">
+          <span className="ncs-chat-avatar"><img src="/nempo-feed/assets/nempo-new.webp" alt="" draggable={false} /></span>
+          <span className="ncs-chat-who">
+            <strong>{chat.name}</strong>
+            <span><i />{chat.status}</span>
+          </span>
+        </div>
+        <p className="ncs-bubble ncs-bubble--in">{chat.customer}</p>
+        <p className="ncs-bubble ncs-bubble--out">{chat.admin}</p>
+        <span className="ncs-typing"><i /><i /><i /></span>
+      </div>
 
       <div className="ncs-bottom">
         <div className="ncs-services">
