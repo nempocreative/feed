@@ -22,3 +22,4 @@
 - [x] Tion Feed slide 14: Hoka Seru 3 + Beef Teriyaki promo video (Rp44.000 dari Rp56.500, -23%), sharp MP4 download
 - [ ] NEMPO Feed slide 44: Hari Pahlawan "hari ini" video slide (Tugu Pahlawan + flag, animated text) with MP4/PNG download
 - [ ] NEMPO Feed slide 44: creative but not tacky ("jangan alay") fonts; re-record MP4/PNG
+- [ ] NEMPO Feed slide 44: static text (no text animation), replace the lines beside the year, replace the italic serif font; re-record MP4/PNG
