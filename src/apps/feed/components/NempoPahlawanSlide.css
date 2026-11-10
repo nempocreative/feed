@@ -30,28 +30,29 @@
 /* Title */
 .nphl-title-block { position: absolute; z-index: 3; top: 19.5cqw; left: 7.5cqw; right: 30cqw; }
 .nphl-kicker {
-  font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; font-size: 3.6cqw; line-height: 1;
-  color: var(--nphl-gold-soft); text-shadow: var(--nphl-text-shadow);
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; font-weight: 600; font-size: 2.3cqw; line-height: 1;
+  text-transform: uppercase; color: var(--nphl-gold-soft); text-shadow: var(--nphl-text-shadow);
   animation: nphl-kicker 13s ease-out infinite both;
 }
 @keyframes nphl-kicker {
-  0%, 5.4% { opacity: 0; letter-spacing: .5em; filter: blur(.6cqw); }
-  14% { opacity: 1; letter-spacing: .06em; filter: blur(0); }
-  93.8% { opacity: 1; letter-spacing: .06em; filter: blur(0); }
-  96.9%, 100% { opacity: 0; letter-spacing: .06em; }
+  0%, 5.4% { opacity: 0; letter-spacing: .6em; filter: blur(.6cqw); }
+  14% { opacity: 1; letter-spacing: .28em; filter: blur(0); }
+  93.8% { opacity: 1; letter-spacing: .28em; filter: blur(0); }
+  96.9%, 100% { opacity: 0; letter-spacing: .28em; }
 }
 .nphl-title {
-  margin-top: 1.6cqw !important; font-family: 'Cinzel', 'Playfair Display', serif; font-weight: 900; line-height: .98;
-  perspective: 60cqw;
+  margin-top: 1.2cqw !important; line-height: .86; color: var(--nphl-cream); perspective: 60cqw;
 }
 .nphl-line { display: block; white-space: nowrap; }
-.nphl-line-1 { font-size: 9cqw; }
-.nphl-line-2 { font-size: 10.6cqw; }
+.nphl-line-1 { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; font-size: 13cqw; margin-left: -.6cqw; }
+.nphl-line-2 {
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; font-weight: 800; font-stretch: 75%; font-variation-settings: 'wdth' 75, 'opsz' 96;
+  font-size: 15.5cqw; text-transform: uppercase; letter-spacing: -.01em !important; color: var(--nphl-gold);
+}
 .nphl-letter {
   display: inline-block; transform-origin: 50% 100%;
-  background: var(--nphl-gold-text); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 .5cqw 1.2cqw var(--nphl-drop));
-  animation: nphl-letter 13s cubic-bezier(.2, .9, .25, 1.2) calc(.07s * var(--i)) infinite both, nphl-shine 6.5s linear infinite;
+  text-shadow: 0 .5cqw 1.8cqw var(--nphl-drop);
+  animation: nphl-letter 13s cubic-bezier(.2, .9, .25, 1.2) calc(.06s * var(--i)) infinite both;
 }
 @keyframes nphl-letter {
   0%, 7.7% { opacity: 0; transform: translateY(70%) rotateX(85deg) scale(.7); }
@@ -59,12 +60,11 @@
   93.8% { opacity: 1; transform: translateY(0) rotateX(0) scale(1); }
   96.9%, 100% { opacity: 0; transform: translateY(-20%) scale(1.04); }
 }
-@keyframes nphl-shine { 0% { background-position: 100% 0; } 100% { background-position: -200% 0; } }
 
 .nphl-date {
   display: flex; align-items: center; gap: 2.2cqw; margin-top: 2.6cqw !important;
-  font-family: 'Space Mono', monospace; font-weight: 700; font-size: 2.6cqw; line-height: 1; color: var(--kmt-text);
-  letter-spacing: .14em !important; text-shadow: var(--nphl-text-shadow);
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; font-weight: 600; font-size: 2.6cqw; line-height: 1; color: var(--kmt-text);
+  letter-spacing: .22em !important; text-shadow: var(--nphl-text-shadow);
   animation: nphl-fade-up 13s ease-out infinite both;
 }
 .nphl-rule { display: block; height: .35cqw; width: 9cqw; background: var(--nphl-rule); transform-origin: right center; animation: nphl-rule 13s ease-out infinite both; }
@@ -87,10 +87,10 @@
 .nphl-years {
   display: inline-flex; align-items: baseline; gap: 1.4cqw; padding: 1cqw 3.4cqw 1cqw 2.8cqw; border-radius: 99px;
   background: var(--nphl-chip); border: 1px solid var(--nphl-chip-line); color: var(--kmt-text);
-  font-size: 2.3cqw; font-weight: 700; letter-spacing: .08em !important; text-transform: uppercase;
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; font-size: 2.2cqw; font-weight: 600; letter-spacing: .12em !important; text-transform: uppercase;
   animation: nphl-pop 13s cubic-bezier(.2, .9, .3, 1.4) infinite both;
 }
-.nphl-years b { font-family: 'Cinzel', serif; font-size: 3.6cqw; font-weight: 900; color: var(--nphl-gold); letter-spacing: 0 !important; }
+.nphl-years b { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 4.4cqw; font-weight: 400; line-height: .8; color: var(--nphl-gold); letter-spacing: 0 !important; }
 @keyframes nphl-pop {
   0%, 21.5% { opacity: 0; transform: scale(.6); }
   26.2% { opacity: 1; transform: scale(1); }
@@ -99,7 +99,7 @@
 }
 .nphl-quote { margin-top: 2.6cqw !important; }
 .nphl-quote p {
-  font-family: 'Playfair Display', serif; font-style: italic; font-weight: 500; font-size: 4cqw; line-height: 1.28; color: var(--kmt-text);
+  font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; font-size: 5cqw; line-height: 1.12; color: var(--nphl-cream);
   text-shadow: var(--nphl-text-shadow); animation: nphl-quote 13s ease-out infinite both;
 }
 @keyframes nphl-quote {
@@ -109,8 +109,8 @@
   96.9%, 100% { opacity: 0; transform: translateY(0); }
 }
 .nphl-quote cite {
-  display: block; margin-top: 1.4cqw; font-style: normal; font-weight: 700; font-size: 2.3cqw; color: var(--nphl-gold-soft);
-  letter-spacing: .12em !important; text-transform: uppercase; animation: nphl-cite 13s ease-out infinite both;
+  display: block; margin-top: 1.4cqw; font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; font-style: normal; font-weight: 600; font-size: 2.1cqw; color: var(--nphl-gold-soft);
+  letter-spacing: .24em !important; text-transform: uppercase; animation: nphl-cite 13s ease-out infinite both;
 }
 @keyframes nphl-cite {
   0%, 32.3% { opacity: 0; transform: translateY(2cqw); }
@@ -119,7 +119,7 @@
   96.9%, 100% { opacity: 0; transform: translateY(0); }
 }
 .nphl-closing {
-  margin-top: 2.2cqw !important; font-weight: 700; font-size: 2.6cqw; color: var(--nphl-gold);
+  margin-top: 2.2cqw !important; font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; font-weight: 500; font-size: 2.7cqw; color: var(--nphl-gold);
   text-shadow: var(--nphl-text-shadow); animation: nphl-closing 13s ease-out infinite both;
 }
 @keyframes nphl-closing {

@@ -249,7 +249,7 @@
   --nphl-night: #140406;
   --nphl-gold: #ffd36a;
   --nphl-gold-soft: #f6dca4;
-  --nphl-gold-text: linear-gradient(100deg, #f7c964 0%, #fff4cf 18%, #f2b544 34%, #f7c964 50%, #fff4cf 68%, #f2b544 84%, #f7c964 100%);
+  --nphl-cream: #fff3dd;
   --nphl-drop: color-mix(in srgb, #1a0204 75%, transparent);
   --nphl-text-shadow: 0 .4cqw 1.6cqw color-mix(in srgb, #1a0204 85%, transparent), 0 0 .5cqw color-mix(in srgb, #1a0204 60%, transparent);
   --nphl-rule: linear-gradient(90deg, transparent, #ffd36a 40%, #ffd36a 60%, transparent);
