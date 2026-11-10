@@ -9,7 +9,7 @@ export const nempoCs = {
   chat: {
     name: 'Admin NEMPO',
     status: 'Online',
-    customer: 'Halo admin, mau tanya paket WO',
+    customer: 'Halo admin, mau tanya paket EO',
     admin: 'Siap kak, kami bantu sekarang ya!',
   },
   servicesLabel: 'Layanan NEMPO',
