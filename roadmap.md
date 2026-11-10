@@ -20,3 +20,5 @@
 - [ ] "Body massage + bekam" duration — waiting on owner
 - [x] Tion Feed slide 13: Roti'O "Momen Manis" promo video in slide 12 look, sharp MP4 download, working download button
 - [x] Tion Feed slide 14: Hoka Seru 3 + Beef Teriyaki promo video (Rp44.000 dari Rp56.500, -23%), sharp MP4 download
+- [ ] NEMPO Feed slide 44: Hari Pahlawan "hari ini" video slide (Tugu Pahlawan + flag, animated text) with MP4/PNG download
+- [ ] NEMPO Feed slide 44: creative but not tacky ("jangan alay") fonts; re-record MP4/PNG
