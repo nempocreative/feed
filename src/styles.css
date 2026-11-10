@@ -244,6 +244,29 @@
   --kmt-pill: color-mix(in srgb, #062f4d 30%, transparent);
   --kmt-pill-strong: color-mix(in srgb, #062f4d 80%, transparent);
 }
+/* Nempo Feed slide 44: Hari Pahlawan (crimson dawn + gold). */
+.nphl-root {
+  --nphl-night: #140406;
+  --nphl-gold: #ffd36a;
+  --nphl-gold-soft: #f6dca4;
+  --nphl-gold-text: linear-gradient(100deg, #f7c964 0%, #fff4cf 18%, #f2b544 34%, #f7c964 50%, #fff4cf 68%, #f2b544 84%, #f7c964 100%);
+  --nphl-drop: color-mix(in srgb, #1a0204 75%, transparent);
+  --nphl-text-shadow: 0 .4cqw 1.6cqw color-mix(in srgb, #1a0204 85%, transparent), 0 0 .5cqw color-mix(in srgb, #1a0204 60%, transparent);
+  --nphl-rule: linear-gradient(90deg, transparent, #ffd36a 40%, #ffd36a 60%, transparent);
+  --nphl-shade: linear-gradient(180deg, color-mix(in srgb, #140406 78%, transparent) 0%, color-mix(in srgb, #140406 35%, transparent) 30%, transparent 45%, transparent 62%, color-mix(in srgb, #140406 55%, transparent) 76%, color-mix(in srgb, #140406 92%, transparent) 100%);
+  --nphl-sun-glow: radial-gradient(circle, color-mix(in srgb, #ffc65a 45%, transparent) 0%, color-mix(in srgb, #ff7a2a 18%, transparent) 40%, transparent 70%);
+  --nphl-ember: #ffc768;
+  --nphl-ember-glow: color-mix(in srgb, #ff8a2a 70%, transparent);
+  --nphl-chip: color-mix(in srgb, #8e0f16 62%, transparent);
+  --nphl-chip-line: color-mix(in srgb, #ffd36a 55%, transparent);
+  --kmt-text: #ffffff;
+  --kmt-gold: #ffd36a;
+  --kmt-line-strong: color-mix(in srgb, #ffffff 28%, transparent);
+  --kmt-logo-bg: color-mix(in srgb, #ffffff 95%, transparent);
+  --kmt-logo-shadow: 0 1.4cqw 3.2cqw color-mix(in srgb, #000000 30%, transparent);
+  --kmt-pill: color-mix(in srgb, #1a0507 45%, transparent);
+  --kmt-pill-strong: color-mix(in srgb, #1a0507 78%, transparent);
+}
 /* Nempo Feed slides 38–43: editorial division posters. */
 .kmd-root {
   --kmd-bg: #04233b;
