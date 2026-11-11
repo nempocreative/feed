@@ -123,6 +123,22 @@
   --ggkt-line: color-mix(in srgb, #3d0b2a 16%, transparent);
 }
 /* GGS Feed slide 30 (3:4): Hari Pahlawan "hari ini" reminder, night + flashlight palette. */
+.gg11-root {
+  --gg11-sky: #bcd9f3;
+  --gg11-white: #ffffff;
+  --gg11-ink: #4a1630;
+  --gg11-ink-soft: #8a4a66;
+  --gg11-pink: #f0679a;
+  --gg11-pink-deep: #d6336f;
+  --gg11-pink-soft: #f6a9c6;
+  --gg11-pink-wash: #ffe4ef;
+  --gg11-card: color-mix(in srgb, #ffffff 90%, transparent);
+  --gg11-shadow: color-mix(in srgb, #a0285a 26%, transparent);
+  --gg11-halo: radial-gradient(closest-side, color-mix(in srgb, #ffffff 55%, transparent), color-mix(in srgb, #ffffff 0%, transparent));
+  --gg11-script-shadow: 0 0 .5cqw #ffffff, 0 0 1.2cqw #ffffff, 0 .3cqw 1.6cqw color-mix(in srgb, #ffffff 90%, transparent);
+  --gg11-date-shadow: .3cqw .3cqw 0 #f0679a, .6cqw .6cqw 0 #e85a8f, .9cqw .9cqw 0 #df4d84, 1.2cqw 1.2cqw 0 #d6336f, 1.5cqw 1.5cqw 0 #c92a64, 0 0 5cqw color-mix(in srgb, #ff7eb0 55%, transparent), 2cqw 2.6cqw 3cqw color-mix(in srgb, #a0285a 30%, transparent);
+}
+
 .ggpi-root {
   --ggpi-night: #0b0709;
   --ggpi-ink: #fff6f0;

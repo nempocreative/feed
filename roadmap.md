@@ -18,6 +18,7 @@
 - [x] GGS Feed slide 30: Hari Pahlawan "hari ini" reminder with the owner's team flashlight photo + PNG download
 - [x] GGS Feed slide 30: remove the yellow "Hari Pahlawan" line; label "Berlaku sampai tanggal 10 November"
 - [ ] "Body massage + bekam" duration — waiting on owner
+- [x] GGS Feed slide 31: 11.11 Double Day Sale — diskon 10–30% all treatment, Nail 35.000 / Massage 85.000 / Ratus 45.000, PNG download
 - [x] Tion Feed slide 13: Roti'O "Momen Manis" promo video in slide 12 look, sharp MP4 download, working download button
 - [x] Tion Feed slide 14: Hoka Seru 3 + Beef Teriyaki promo video (Rp44.000 dari Rp56.500, -23%), sharp MP4 download
 - [x] NEMPO Feed slide 44: Hari Pahlawan "hari ini" video slide (Tugu Pahlawan + flag, animated text) with MP4/PNG download
