@@ -155,12 +155,13 @@
 }
 
 .ggmc-root {
-  --ggmc-paper: #f3ead8;
-  --ggmc-ink: #15202c;
-  --ggmc-brass: #c69a4a;
-  --ggmc-brass-deep: #8e6424;
-  --ggmc-shade: linear-gradient(180deg, color-mix(in srgb, #f6efe1 96%, transparent) 0%, color-mix(in srgb, #f6efe1 90%, transparent) 24%, color-mix(in srgb, #f6efe1 62%, transparent) 33%, color-mix(in srgb, #f6efe1 0%, transparent) 43%);
-  --ggmc-title-shadow: .25cqw .25cqw 0 #c69a4a, .5cqw .5cqw 0 #ae8237, .75cqw .75cqw 0 #8e6424, 1cqw 1.6cqw 2.4cqw color-mix(in srgb, #2a1a08 22%, transparent);
+  --ggmc-paper: #f5eee2;
+  --ggmc-ink: #17150f;
+  --ggmc-brass: #b88a3e;
+  --ggmc-brass-deep: #84602a;
+  --ggmc-glow: radial-gradient(120% 70% at 50% 18%, color-mix(in srgb, #fffaf1 90%, transparent) 0%, color-mix(in srgb, #fffaf1 0%, transparent) 60%), linear-gradient(180deg, #f6efe3 0%, #efe4d1 100%);
+  --ggmc-photo-shadow: 0 2cqw 5cqw color-mix(in srgb, #3a2810 26%, transparent);
+  --ggmc-seal-shadow: 0 1cqw 2.6cqw color-mix(in srgb, #3a2810 28%, transparent);
 }
 
 .ggpi-root {

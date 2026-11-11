@@ -30,3 +30,4 @@
 - [x] NEMPO Feed slide 45: NEMPO customer service (layanan pelanggan) design with download
 - [x] NEMPO Feed slide 45: more attractive, no Telegram, emphasize EO / WO / Creative; re-capture PNG
 - [x] GGS Cowok slide 04: video cover "Burst Fade" with the owner's photo + PNG download
+- [x] GGS Cowok slide 04: more elegant cover, sharper photo, more creative lettering

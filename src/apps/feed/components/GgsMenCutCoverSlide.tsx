@@ -1,9 +1,12 @@
 import type { RefObject } from 'react';
-import photo from '@/assets/ggs-men-burst-fade-cover.jpg.asset.json';
+import { Scissors } from 'lucide-react';
+import photo from '@/assets/ggs-men-burst-fade-arch-enhanced.jpg';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
 import './GgsMenCutCoverSlide.css';
 
-/** GGS Cowok slide 4: video cover naming the haircut (Burst Fade) over the owner's client photo. */
+const SEAL_TEXT = 'Barber Hairstudio · Grooming is Better · ';
+
+/** GGS Cowok slide 4: elegant video cover naming the haircut (Burst Fade) — client photo in an arch window. */
 export function GgsMenCutCoverSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
     <div
@@ -12,8 +15,7 @@ export function GgsMenCutCoverSlide({ exportRef }: { exportRef?: RefObject<HTMLE
       role="img"
       aria-label="GGS Barber Hairstudio — model rambut Burst Fade"
     >
-      <img className="ggmc-photo" src={photo.url} width={1440} height={1920} alt="" aria-hidden="true" />
-      <span className="ggmc-shade" aria-hidden="true" />
+      <span className="ggmc-glow" aria-hidden="true" />
 
       <section className="ggmc-head" aria-hidden="true">
         <p className="ggmc-kicker">
@@ -22,10 +24,27 @@ export function GgsMenCutCoverSlide({ exportRef }: { exportRef?: RefObject<HTMLE
           <span />
         </p>
         <h2 className="ggmc-title">
-          <b>Burst</b>
-          <em>Fade</em>
+          <em>Burst</em>
+          <b>Fade</b>
         </h2>
       </section>
+
+      <figure className="ggmc-arch" aria-hidden="true">
+        <span className="ggmc-arch-line" />
+        <img className="ggmc-photo" src={photo} width={1488} height={1648} alt="" />
+      </figure>
+
+      <div className="ggmc-seal" aria-hidden="true">
+        <svg className="ggmc-seal-ring" viewBox="0 0 200 200">
+          <defs>
+            <path id="ggmc-seal-ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" />
+          </defs>
+          <text>
+            <textPath href="#ggmc-seal-ring" textLength="462" lengthAdjust="spacing">{SEAL_TEXT}</textPath>
+          </text>
+        </svg>
+        <Scissors className="ggmc-seal-icon" strokeWidth={1.4} />
+      </div>
 
       <img className="ggmc-watermark" src={menOverlay.url} alt="" draggable={false} />
     </div>
