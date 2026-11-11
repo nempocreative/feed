@@ -141,6 +141,7 @@ import { GgsNailCardsSlide } from './components/GgsNailCardsSlide';
 import { GgsHairCardsSlide } from './components/GgsHairCardsSlide';
 import { GgsMenHairCardsSlide } from './components/GgsMenHairCardsSlide';
 import { GgsMenContactSlide } from './components/GgsMenContactSlide';
+import { GgsMenDoubleDaySlide } from './components/GgsMenDoubleDaySlide';
 import { GgsPromoSpesialSlide } from './components/GgsPromoSpesialSlide';
 import { GgsWeAreOpenSlide } from './components/GgsWeAreOpenSlide';
 import { GgsOpenHoursSlide } from './components/GgsOpenHoursSlide';
@@ -2845,7 +2846,7 @@ function App() {
   >('nempo');
   const [activeSlide, setActiveSlide] = useState<FeedSlide>(32);
   const [activeClientSlide, setActiveClientSlide] = useState<ClientSlide>(3);
-  const [ggsMenSlide, setGgsMenSlide] = useState<1 | 2>(1);
+  const [ggsMenSlide, setGgsMenSlide] = useState<1 | 2 | 3>(1);
   const [isDownloading, setIsDownloading] = useState(false);
   const [preparedNempoPng, setPreparedNempoPng] = useState<{
     url: string;
@@ -3613,7 +3614,7 @@ function App() {
         ) : isCalendar ? (
           <Ggs2027Calendar exportRef={exportRef} />
         ) : isGgsMen ? (
-          ggsMenSlide === 2 ? <GgsMenContactSlide exportRef={exportRef} /> : <GgsMenHairCardsSlide exportRef={exportRef} />
+          ggsMenSlide === 3 ? <GgsMenDoubleDaySlide exportRef={exportRef} /> : ggsMenSlide === 2 ? <GgsMenContactSlide exportRef={exportRef} /> : <GgsMenHairCardsSlide exportRef={exportRef} />
         ) : isGgsFeed ? (
           <ClientFeedArtwork
             exportRef={exportRef}
@@ -3639,7 +3640,7 @@ function App() {
         )}
         {isGgsMen && (
           <div className="mt-4 flex items-center gap-1 rounded-full bg-[#062f4d] p-1 shadow-[0_8px_20px_rgba(0,40,78,0.2)]" aria-label="Pilih slide GGS Cowok">
-            {([1, 2] as const).map((slide) => (
+            {([1, 2, 3] as const).map((slide) => (
               <button
                 key={slide}
                 type="button"

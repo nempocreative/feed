@@ -139,6 +139,19 @@
   --gg11-date-shadow: .3cqw .3cqw 0 #f0679a, .6cqw .6cqw 0 #e85a8f, .9cqw .9cqw 0 #df4d84, 1.2cqw 1.2cqw 0 #d6336f, 1.5cqw 1.5cqw 0 #c92a64, 0 0 5cqw color-mix(in srgb, #ff7eb0 55%, transparent), 2cqw 2.6cqw 3cqw color-mix(in srgb, #a0285a 30%, transparent);
 }
 
+/* GGS Cowok slide 3 (3:4): 11.11 Paket GP Ganteng Pisan, dark barbershop + yellow/red promo palette. */
+.ggm11-root {
+  --ggm11-ink: #121110;
+  --ggm11-white: #ffffff;
+  --ggm11-white-soft: #e8e2d8;
+  --ggm11-yellow: #ffdd00;
+  --ggm11-yellow-dark: #b89200;
+  --ggm11-red: #e8212e;
+  --ggm11-gold: #c9992e;
+  --ggm11-gold-light: #e4bd61;
+  --ggm11-shade: linear-gradient(180deg, color-mix(in srgb, #0a0908 78%, transparent) 0%, color-mix(in srgb, #0a0908 55%, transparent) 22%, color-mix(in srgb, #0a0908 18%, transparent) 42%, color-mix(in srgb, #0a0908 30%, transparent) 62%, color-mix(in srgb, #0a0908 72%, transparent) 88%);
+}
+
 .ggpi-root {
   --ggpi-night: #0b0709;
   --ggpi-ink: #fff6f0;
