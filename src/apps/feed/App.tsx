@@ -52,6 +52,7 @@ import ggsWeAreOpenVideo from '@/assets/ggs-feed-12-we-are-open.mp4';
 import { PrebuiltPngDownload } from './components/PrebuiltPngDownload';
 import ggsMenContactPng from '@/assets/ggs-cowok-02-customer-service.png.asset.json';
 import ggsMenDoubleDayPng from '@/assets/ggs-men-03-diskon-1111.png.asset.json';
+import ggsMenBurstFadePng from '@/assets/ggs-men-04-burst-fade-cover.png.asset.json';
 import {
   FaFileExcel,
   FaFileWord,
@@ -143,6 +144,7 @@ import { GgsHairCardsSlide } from './components/GgsHairCardsSlide';
 import { GgsMenHairCardsSlide } from './components/GgsMenHairCardsSlide';
 import { GgsMenContactSlide } from './components/GgsMenContactSlide';
 import { GgsMenDoubleDaySlide } from './components/GgsMenDoubleDaySlide';
+import { GgsMenCutCoverSlide } from './components/GgsMenCutCoverSlide';
 import { GgsPromoSpesialSlide } from './components/GgsPromoSpesialSlide';
 import { GgsWeAreOpenSlide } from './components/GgsWeAreOpenSlide';
 import { GgsOpenHoursSlide } from './components/GgsOpenHoursSlide';
@@ -2847,7 +2849,7 @@ function App() {
   >('nempo');
   const [activeSlide, setActiveSlide] = useState<FeedSlide>(32);
   const [activeClientSlide, setActiveClientSlide] = useState<ClientSlide>(3);
-  const [ggsMenSlide, setGgsMenSlide] = useState<1 | 2 | 3>(1);
+  const [ggsMenSlide, setGgsMenSlide] = useState<1 | 2 | 3 | 4>(1);
   const [isDownloading, setIsDownloading] = useState(false);
   const [preparedNempoPng, setPreparedNempoPng] = useState<{
     url: string;
@@ -3351,6 +3353,18 @@ function App() {
             <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 1440×1920, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
           </div>
         )}
+        {isGgsMen && ggsMenSlide === 4 && (
+          <div className="mb-3 flex flex-col items-center gap-2">
+            <PrebuiltPngDownload
+              key="ggs-men-04"
+              src={ggsMenBurstFadePng.url}
+              fileName="GGS-Cowok-04-Cover-Burst-Fade.png"
+              label="Download PNG"
+              className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
+            />
+            <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 1440×1920, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
+          </div>
+        )}
         {isGgsMen && ggsMenSlide === 1 && <div className="mb-3"><Button asChild><a href={ggsMenVideo.url} download="GGS-Cowok-Pilihan-Rambut.mp4"><Download className="h-4 w-4" aria-hidden="true" />Download video · MP4 1440×1920</a></Button></div>}
         {!isGgsMen && !isCoupon && !isQCard && !isSpreadsheet && !isRundown && !isBumper && (
           <div className="mb-3 flex flex-col items-center gap-2">
@@ -3627,7 +3641,7 @@ function App() {
         ) : isCalendar ? (
           <Ggs2027Calendar exportRef={exportRef} />
         ) : isGgsMen ? (
-          ggsMenSlide === 3 ? <GgsMenDoubleDaySlide exportRef={exportRef} /> : ggsMenSlide === 2 ? <GgsMenContactSlide exportRef={exportRef} /> : <GgsMenHairCardsSlide exportRef={exportRef} />
+          ggsMenSlide === 4 ? <GgsMenCutCoverSlide exportRef={exportRef} /> : ggsMenSlide === 3 ? <GgsMenDoubleDaySlide exportRef={exportRef} /> : ggsMenSlide === 2 ? <GgsMenContactSlide exportRef={exportRef} /> : <GgsMenHairCardsSlide exportRef={exportRef} />
         ) : isGgsFeed ? (
           <ClientFeedArtwork
             exportRef={exportRef}
@@ -3653,7 +3667,7 @@ function App() {
         )}
         {isGgsMen && (
           <div className="mt-4 flex items-center gap-1 rounded-full bg-[#062f4d] p-1 shadow-[0_8px_20px_rgba(0,40,78,0.2)]" aria-label="Pilih slide GGS Cowok">
-            {([1, 2, 3] as const).map((slide) => (
+            {([1, 2, 3, 4] as const).map((slide) => (
               <button
                 key={slide}
                 type="button"

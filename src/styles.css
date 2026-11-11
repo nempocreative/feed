@@ -154,6 +154,15 @@
   --ggm11-date-shadow: .3cqw .3cqw 0 #c69a4a, .6cqw .6cqw 0 #ba8e40, .9cqw .9cqw 0 #ae8237, 1.2cqw 1.2cqw 0 #a1762f, 1.5cqw 1.5cqw 0 #8e6424, 2cqw 2.8cqw 3.4cqw color-mix(in srgb, #2a1a08 28%, transparent);
 }
 
+.ggmc-root {
+  --ggmc-paper: #f3ead8;
+  --ggmc-ink: #15202c;
+  --ggmc-brass: #c69a4a;
+  --ggmc-brass-deep: #8e6424;
+  --ggmc-shade: linear-gradient(180deg, color-mix(in srgb, #f6efe1 96%, transparent) 0%, color-mix(in srgb, #f6efe1 90%, transparent) 24%, color-mix(in srgb, #f6efe1 62%, transparent) 33%, color-mix(in srgb, #f6efe1 0%, transparent) 43%);
+  --ggmc-title-shadow: .25cqw .25cqw 0 #c69a4a, .5cqw .5cqw 0 #ae8237, .75cqw .75cqw 0 #8e6424, 1cqw 1.6cqw 2.4cqw color-mix(in srgb, #2a1a08 22%, transparent);
+}
+
 .ggpi-root {
   --ggpi-night: #0b0709;
   --ggpi-ink: #fff6f0;

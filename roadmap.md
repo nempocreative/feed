@@ -29,3 +29,4 @@
 - [x] NEMPO Feed slide 44: precise, even spacing for the bottom text block; re-record MP4/PNG
 - [x] NEMPO Feed slide 45: NEMPO customer service (layanan pelanggan) design with download
 - [x] NEMPO Feed slide 45: more attractive, no Telegram, emphasize EO / WO / Creative; re-capture PNG
+- [x] GGS Cowok slide 04: video cover "Burst Fade" with the owner's photo + PNG download
