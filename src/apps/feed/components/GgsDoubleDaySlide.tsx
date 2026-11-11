@@ -1,5 +1,5 @@
 import type { ReactElement, RefObject } from 'react';
-import { HandHeart, Leaf, Sparkles } from 'lucide-react';
+import { Flower2, HandHeart, Leaf } from 'lucide-react';
 import skyBackdrop from '@/assets/ggs-feed-31-1111-pastel-sky.jpg.asset.json';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
 import { GGS_1111_PROMO, type Ggs1111PriceKey } from './ggs-1111-promo';
@@ -57,7 +57,7 @@ export function GgsDoubleDaySlide({ exportRef }: { exportRef?: RefObject<HTMLEle
         </div>
         <span className="gg11-divider" aria-hidden="true" />
         <div className="gg11-seg">
-          <Sparkles className="gg11-spark" aria-hidden="true" strokeWidth={1.8} />
+          <Flower2 className="gg11-spark" aria-hidden="true" strokeWidth={1.8} />
           <p className="gg11-scope">
             {scope.split(' ').map((word) => (
               <span key={word}>{word}</span>
