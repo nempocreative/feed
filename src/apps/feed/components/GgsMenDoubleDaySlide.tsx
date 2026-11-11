@@ -1,21 +1,21 @@
-import type { RefObject } from 'react';
-import { MapPin } from 'lucide-react';
-import barbershop from '@/assets/ggs-men-1111-barbershop-dark.jpg';
+import type { ReactElement, RefObject } from 'react';
+import { Droplets, HandHeart, MapPin, Scissors } from 'lucide-react';
+import studio from '@/assets/ggs-men-1111-cream-studio.jpg';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
 import { GGS_MEN_1111_PROMO } from './ggs-men-1111-promo';
 import './GgsMenDoubleDaySlide.css';
 
-function CrownIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M2.5 18.5h19l1.2-10.2-5.4 3.9L12 4.8l-5.3 7.4-5.4-3.9 1.2 10.2Zm-.4 2.2a1 1 0 0 1 1-1h17.8a1 1 0 1 1 0 2H3.1a1 1 0 0 1-1-1Z" />
-    </svg>
-  );
-}
+const ITEM_ICONS: Record<string, () => ReactElement> = {
+  Potong: () => <Scissors aria-hidden="true" strokeWidth={1.6} />,
+  Cuci: () => <Droplets aria-hidden="true" strokeWidth={1.6} />,
+  Pijit: () => <HandHeart aria-hidden="true" strokeWidth={1.6} />,
+};
 
-/** GGS Cowok slide 3: 11.11 "Paket GP Ganteng Pisan" — 11% off Potong Cuci Pijit over a dark barbershop photo. */
+/** GGS Cowok slide 3: 11.11 "Paket GP Ganteng Pisan" — 11% off Potong · Cuci · Pijit, laid out like GGS Feed slide 31. */
 export function GgsMenDoubleDaySlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   const p = GGS_MEN_1111_PROMO;
+  const [left, right] = p.date.split('.');
+  const items = p.packageItems.split(' · ');
   return (
     <div
       ref={exportRef as RefObject<HTMLDivElement | null>}
@@ -23,36 +23,58 @@ export function GgsMenDoubleDaySlide({ exportRef }: { exportRef?: RefObject<HTML
       role="img"
       aria-label={`GGS Barber Hairstudio Diskon ${p.date}: ${p.packageBadge} ${p.packageName} (${p.packageItems}) diskon ${p.discount}%. ${p.location}`}
     >
-      <img className="ggm11-bg" src={barbershop} width={1088} height={1440} alt="" aria-hidden="true" />
-      <span className="ggm11-shade" aria-hidden="true" />
+      <img className="ggm11-bg" src={studio} width={1440} height={1920} alt="" aria-hidden="true" />
+      <span className="ggm11-halo" aria-hidden="true" />
 
       <section className="ggm11-head">
-        <CrownIcon />
-        <p className="ggm11-diskon">Diskon</p>
-        <h2 className="ggm11-date">{p.date}</h2>
+        <p className="ggm11-kicker">
+          <span aria-hidden="true" />
+          Diskon
+          <span aria-hidden="true" />
+        </p>
+        <h2 className="ggm11-date">
+          <span>{left}</span>
+          <span className="ggm11-dot">.</span>
+          <span>{right}</span>
+        </h2>
+        <p className="ggm11-tagline">
+          {p.taglineTop} <em>{p.taglineHighlight}</em>
+        </p>
       </section>
 
-      <p className="ggm11-tagline">
-        {p.taglineTop} <em>{p.taglineHighlight}</em>
-      </p>
+      <div className="ggm11-ribbon">
+        <div className="ggm11-seg">
+          <span className="ggm11-pct" aria-hidden="true">%</span>
+          <p className="ggm11-disc">
+            <small>Diskon</small>
+            <b>{p.discount}%</b>
+          </p>
+        </div>
+        <span className="ggm11-divider" aria-hidden="true" />
+        <p className="ggm11-pack">
+          <small>{p.packageBadge}</small>
+          <b>{p.packageName}</b>
+        </p>
+      </div>
 
-      <section className="ggm11-pack">
-        <p className="ggm11-pack-badge">{p.packageBadge}</p>
-        <h3 className="ggm11-pack-name">{p.packageName}</h3>
-        <p className="ggm11-pack-items">({p.packageItems})</p>
+      <section className="ggm11-items">
+        <p className="ggm11-items-label">{p.urgency}</p>
+        <ul className="ggm11-cards">
+          {items.map((name) => {
+            const Icon = ITEM_ICONS[name];
+            return (
+              <li key={name} className="ggm11-card">
+                <span className="ggm11-icon">{Icon ? <Icon /> : null}</span>
+                <span className="ggm11-name">{name}</span>
+              </li>
+            );
+          })}
+        </ul>
+        <p className="ggm11-location">
+          <MapPin aria-hidden="true" strokeWidth={2} />
+          {p.location}
+        </p>
       </section>
-
-      <section className="ggm11-disc">
-        <p className="ggm11-disc-label">Diskon</p>
-        <p className="ggm11-disc-value">{p.discount}%</p>
-      </section>
-
-      <p className="ggm11-urgency">{p.urgency}</p>
-
-      <p className="ggm11-location">
-        <MapPin aria-hidden="true" strokeWidth={2.4} />
-        {p.location}
-      </p>
 
       <img className="ggm11-watermark" src={menOverlay.url} alt="" draggable={false} />
     </div>

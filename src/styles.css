@@ -139,17 +139,19 @@
   --gg11-date-shadow: .3cqw .3cqw 0 #f0679a, .6cqw .6cqw 0 #e85a8f, .9cqw .9cqw 0 #df4d84, 1.2cqw 1.2cqw 0 #d6336f, 1.5cqw 1.5cqw 0 #c92a64, 0 0 5cqw color-mix(in srgb, #ff7eb0 55%, transparent), 2cqw 2.6cqw 3cqw color-mix(in srgb, #a0285a 30%, transparent);
 }
 
-/* GGS Cowok slide 3 (3:4): 11.11 Paket GP Ganteng Pisan, dark barbershop + yellow/red promo palette. */
+/* GGS Cowok slide 3 (3:4): 11.11 Paket GP Ganteng Pisan, cream studio wall + navy/brass palette (pairs with GGS Feed slide 31). */
 .ggm11-root {
-  --ggm11-ink: #121110;
+  --ggm11-cream: #efe0c8;
+  --ggm11-ink: #15202c;
   --ggm11-white: #ffffff;
-  --ggm11-white-soft: #e8e2d8;
-  --ggm11-yellow: #ffdd00;
-  --ggm11-yellow-dark: #b89200;
-  --ggm11-red: #e8212e;
-  --ggm11-gold: #c9992e;
-  --ggm11-gold-light: #e4bd61;
-  --ggm11-shade: linear-gradient(180deg, color-mix(in srgb, #0a0908 78%, transparent) 0%, color-mix(in srgb, #0a0908 55%, transparent) 22%, color-mix(in srgb, #0a0908 18%, transparent) 42%, color-mix(in srgb, #0a0908 30%, transparent) 62%, color-mix(in srgb, #0a0908 72%, transparent) 88%);
+  --ggm11-brass: #c69a4a;
+  --ggm11-brass-deep: #8e6424;
+  --ggm11-brass-light: #e2c38a;
+  --ggm11-card: color-mix(in srgb, #fbf6ee 92%, transparent);
+  --ggm11-card-line: color-mix(in srgb, #c69a4a 45%, #ffffff);
+  --ggm11-shadow: color-mix(in srgb, #2a1a08 30%, transparent);
+  --ggm11-halo: radial-gradient(closest-side, color-mix(in srgb, #fff8ec 60%, transparent), color-mix(in srgb, #fff8ec 0%, transparent));
+  --ggm11-date-shadow: .3cqw .3cqw 0 #c69a4a, .6cqw .6cqw 0 #ba8e40, .9cqw .9cqw 0 #ae8237, 1.2cqw 1.2cqw 0 #a1762f, 1.5cqw 1.5cqw 0 #8e6424, 2cqw 2.8cqw 3.4cqw color-mix(in srgb, #2a1a08 28%, transparent);
 }
 
 .ggpi-root {
