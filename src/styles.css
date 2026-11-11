@@ -164,6 +164,16 @@
   --ggmc-seal-shadow: 0 1cqw 2.6cqw color-mix(in srgb, #3a2810 28%, transparent);
 }
 
+.ggmp-root {
+  --ggmp-paper: #f5eee2;
+  --ggmp-ink: #17150f;
+  --ggmp-ink-soft: #4a3f30;
+  --ggmp-brass: #b88a3e;
+  --ggmp-brass-deep: #84602a;
+  --ggmp-fade: linear-gradient(180deg, color-mix(in srgb, #f5eee2 78%, transparent) 0%, color-mix(in srgb, #f5eee2 55%, transparent) 26%, color-mix(in srgb, #f5eee2 0%, transparent) 42%, color-mix(in srgb, #f5eee2 0%, transparent) 100%);
+  --ggmp-price-shadow: 0 1.2cqw 3.2cqw color-mix(in srgb, #1a1006 38%, transparent);
+}
+
 .ggpi-root {
   --ggpi-night: #0b0709;
   --ggpi-ink: #fff6f0;
